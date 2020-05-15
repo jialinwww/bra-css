@@ -1,0 +1,52 @@
+{
+  "name": "braui",
+  "version": "0.0.1",
+  "homepage": "https://www.bra.ac",
+  "author": {
+    "name": "jialin",
+    "email": "1620298436@qa.com",
+    "url": "https://www.bra.ac"
+  },
+  "description": "Bra CSS framework based on Flexbox",
+  "main": "bra.sass",
+  "unpkg": "css/bra.css",
+  "style": "bra/css/bra.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jialinwww/bra-css.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/jialinwww/bra-css/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/bra.css css/bra.css",
+    "build-cleancss": "cleancss -o css/bra.min.css css/bra.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true bra.sass css/bra.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "files": [
+    "css",
+    "sass",
+    "bra.sass",
+    "LICENSE",
+    "README.md"
+  ]
+}
