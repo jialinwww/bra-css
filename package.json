@@ -8,7 +8,7 @@
     "url": "https://www.bra.ac"
   },
   "description": "Bra CSS framework based on Flexbox",
-  "main": "bra.sass",
+  "main": "bra.scss",
   "unpkg": "css/bra.css",
   "style": "bra/css/bra.min.css",
   "repository": {
@@ -18,7 +18,7 @@
   "license": "MIT",
   "keywords": [
     "css",
-    "sass",
+    "scss",
     "flexbox",
     "responsive",
     "framework"
@@ -38,14 +38,14 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/bra.css css/bra.css",
     "build-cleancss": "cleancss -o css/bra.min.css css/bra.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true bra.sass css/bra.css",
+    "build-sass": "node-sass --output-style expanded --source-map true bra.scss css/bra.css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch"
   },
   "files": [
     "css",
-    "sass",
-    "bra.sass",
+    "scss",
+    "bra.scss",
     "LICENSE",
     "README.md"
   ]
