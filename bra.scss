@@ -1,5 +1,8 @@
 @charset "utf-8";
-@import "scss/base/base";
-@import "scss/base/helper";
 
+@import "scss/utils/_utils_all";
+@import "scss/base/_base_all";
+@import "scss/elements/_elements_all";
+@import "scss/form/_form_all";
+@import "scss/components/comp_all";
 @import "scss/grid/columns";
