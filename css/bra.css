@@ -1,3 +1,12 @@
+@-webkit-keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -16,7 +25,8 @@
 }
 
 .button.is-loading::after {
-  animation: spinAround 500ms infinite linear;
+  -webkit-animation: spinAround 500ms infinite linear;
+          animation: spinAround 500ms infinite linear;
   border: 2px solid #dbdbdb;
   border-radius: 290486px;
   border-right-color: transparent;
@@ -36,7 +46,7 @@
   top: 0;
 }
 
-.button {
+.button, .bra-input, .bra-textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
@@ -56,12 +66,14 @@
   vertical-align: top;
 }
 
-.button:focus, .is-focused.button, .button:active, .is-active.button {
+.button:focus, .bra-input:focus, .bra-textarea:focus, .is-focused.button, .is-focused.bra-input, .is-focused.bra-textarea, .button:active, .bra-input:active, .bra-textarea:active, .is-active.button, .is-active.bra-input, .is-active.bra-textarea {
   outline: none;
 }
 
-.button[disabled],
-fieldset[disabled] .button {
+.button[disabled], .bra-input[disabled], .bra-textarea[disabled],
+fieldset[disabled] .button,
+fieldset[disabled] .bra-input,
+fieldset[disabled] .bra-textarea {
   cursor: not-allowed;
 }
 
@@ -156,7 +168,10 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
 article,
@@ -2774,6 +2789,219 @@ fieldset[disabled] .button {
   margin-right: 0.25rem;
 }
 
+.bra-input, .bra-textarea {
+  background-color: white;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+  color: #363636;
+}
+
+.bra-input::-moz-placeholder, .bra-textarea::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bra-input::-webkit-input-placeholder, .bra-textarea::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bra-input:-moz-placeholder, .bra-textarea:-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bra-input:-ms-input-placeholder, .bra-textarea:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bra-input:hover, .bra-textarea:hover, .is-hovered.bra-input, .is-hovered.bra-textarea {
+  border-color: #b5b5b5;
+}
+
+.bra-input:focus, .bra-textarea:focus, .is-focused.bra-input, .is-focused.bra-textarea, .bra-input:active, .bra-textarea:active, .is-active.bra-input, .is-active.bra-textarea {
+  border-color: #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.bra-input[disabled], .bra-textarea[disabled],
+fieldset[disabled] .bra-input,
+fieldset[disabled] .bra-textarea {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  box-shadow: none;
+  color: #7a7a7a;
+}
+
+.bra-input[disabled]::-moz-placeholder, .bra-textarea[disabled]::-moz-placeholder,
+fieldset[disabled] .bra-input::-moz-placeholder,
+fieldset[disabled] .bra-textarea::-moz-placeholder {
+  color: rgba(122, 122, 122, 0.3);
+}
+
+.bra-input[disabled]::-webkit-input-placeholder, .bra-textarea[disabled]::-webkit-input-placeholder,
+fieldset[disabled] .bra-input::-webkit-input-placeholder,
+fieldset[disabled] .bra-textarea::-webkit-input-placeholder {
+  color: rgba(122, 122, 122, 0.3);
+}
+
+.bra-input[disabled]:-moz-placeholder, .bra-textarea[disabled]:-moz-placeholder,
+fieldset[disabled] .bra-input:-moz-placeholder,
+fieldset[disabled] .bra-textarea:-moz-placeholder {
+  color: rgba(122, 122, 122, 0.3);
+}
+
+.bra-input[disabled]:-ms-input-placeholder, .bra-textarea[disabled]:-ms-input-placeholder,
+fieldset[disabled] .bra-input:-ms-input-placeholder,
+fieldset[disabled] .bra-textarea:-ms-input-placeholder {
+  color: rgba(122, 122, 122, 0.3);
+}
+
+.bra-input, .bra-textarea {
+  box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+  max-width: 100%;
+  width: 100%;
+}
+
+.bra-input[readonly], .bra-textarea[readonly] {
+  box-shadow: none;
+}
+
+.is-white.bra-input, .is-white.bra-textarea {
+  border-color: white;
+}
+
+.is-white.bra-input:focus, .is-white.bra-textarea:focus, .is-white.is-focused.bra-input, .is-white.is-focused.bra-textarea, .is-white.bra-input:active, .is-white.bra-textarea:active, .is-white.is-active.bra-input, .is-white.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+}
+
+.is-black.bra-input, .is-black.bra-textarea {
+  border-color: #0a0a0a;
+}
+
+.is-black.bra-input:focus, .is-black.bra-textarea:focus, .is-black.is-focused.bra-input, .is-black.is-focused.bra-textarea, .is-black.bra-input:active, .is-black.bra-textarea:active, .is-black.is-active.bra-input, .is-black.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25);
+}
+
+.is-light.bra-input, .is-light.bra-textarea {
+  border-color: whitesmoke;
+}
+
+.is-light.bra-input:focus, .is-light.bra-textarea:focus, .is-light.is-focused.bra-input, .is-light.is-focused.bra-textarea, .is-light.bra-input:active, .is-light.bra-textarea:active, .is-light.is-active.bra-input, .is-light.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25);
+}
+
+.is-dark.bra-input, .is-dark.bra-textarea {
+  border-color: #363636;
+}
+
+.is-dark.bra-input:focus, .is-dark.bra-textarea:focus, .is-dark.is-focused.bra-input, .is-dark.is-focused.bra-textarea, .is-dark.bra-input:active, .is-dark.bra-textarea:active, .is-dark.is-active.bra-input, .is-dark.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
+}
+
+.is-primary.bra-input, .is-primary.bra-textarea {
+  border-color: #00d1b2;
+}
+
+.is-primary.bra-input:focus, .is-primary.bra-textarea:focus, .is-primary.is-focused.bra-input, .is-primary.is-focused.bra-textarea, .is-primary.bra-input:active, .is-primary.bra-textarea:active, .is-primary.is-active.bra-input, .is-primary.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+}
+
+.is-link.bra-input, .is-link.bra-textarea {
+  border-color: #3273dc;
+}
+
+.is-link.bra-input:focus, .is-link.bra-textarea:focus, .is-link.is-focused.bra-input, .is-link.is-focused.bra-textarea, .is-link.bra-input:active, .is-link.bra-textarea:active, .is-link.is-active.bra-input, .is-link.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.is-info.bra-input, .is-info.bra-textarea {
+  border-color: #3298dc;
+}
+
+.is-info.bra-input:focus, .is-info.bra-textarea:focus, .is-info.is-focused.bra-input, .is-info.is-focused.bra-textarea, .is-info.bra-input:active, .is-info.bra-textarea:active, .is-info.is-active.bra-input, .is-info.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(50, 152, 220, 0.25);
+}
+
+.is-success.bra-input, .is-success.bra-textarea {
+  border-color: #48c774;
+}
+
+.is-success.bra-input:focus, .is-success.bra-textarea:focus, .is-success.is-focused.bra-input, .is-success.is-focused.bra-textarea, .is-success.bra-input:active, .is-success.bra-textarea:active, .is-success.is-active.bra-input, .is-success.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 116, 0.25);
+}
+
+.is-warning.bra-input, .is-warning.bra-textarea {
+  border-color: #ffdd57;
+}
+
+.is-warning.bra-input:focus, .is-warning.bra-textarea:focus, .is-warning.is-focused.bra-input, .is-warning.is-focused.bra-textarea, .is-warning.bra-input:active, .is-warning.bra-textarea:active, .is-warning.is-active.bra-input, .is-warning.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+}
+
+.is-danger.bra-input, .is-danger.bra-textarea {
+  border-color: #f14668;
+}
+
+.is-danger.bra-input:focus, .is-danger.bra-textarea:focus, .is-danger.is-focused.bra-input, .is-danger.is-focused.bra-textarea, .is-danger.bra-input:active, .is-danger.bra-textarea:active, .is-danger.is-active.bra-input, .is-danger.is-active.bra-textarea {
+  box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
+}
+
+.is-small.bra-input, .is-small.bra-textarea {
+  border-radius: 2px;
+  font-size: 0.75rem;
+}
+
+.is-medium.bra-input, .is-medium.bra-textarea {
+  font-size: 1.25rem;
+}
+
+.is-large.bra-input, .is-large.bra-textarea {
+  font-size: 1.5rem;
+}
+
+.is-fullwidth.bra-input, .is-fullwidth.bra-textarea {
+  display: block;
+  width: 100%;
+}
+
+.is-inline.bra-input, .is-inline.bra-textarea {
+  display: inline;
+  width: auto;
+}
+
+.bra-input.is-rounded {
+  border-radius: 290486px;
+  padding-left: calc(calc(0.75em - 1px) + 0.375em);
+  padding-right: calc(calc(0.75em - 1px) + 0.375em);
+}
+
+.bra-input.is-static {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bra-textarea {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  padding: calc(0.75em - 1px);
+  resize: vertical;
+}
+
+.bra-textarea:not([rows]) {
+  max-height: 40em;
+  min-height: 8em;
+}
+
+.bra-textarea[rows] {
+  height: initial;
+}
+
+.bra-textarea.has-fixed-size {
+  resize: none;
+}
+
 .column {
   display: block;
   flex-basis: 0;
@@ -4566,5 +4794,4 @@ fieldset[disabled] .button {
     --columnGap: 2rem;
   }
 }
-
 /*# sourceMappingURL=bra.css.map */
