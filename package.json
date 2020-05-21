@@ -48,5 +48,8 @@
     "bra.scss",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }

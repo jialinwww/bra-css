@@ -1,0 +1,46 @@
+.bra-cells {
+  margin-top: 8px;
+  line-height: 1.41176471;
+  font-size: 17px;
+  overflow: hidden;
+  position: relative;
+}
+.bra-cell {
+  padding: $size-small ;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.bra-cell:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  color: rgba(0,0,0,0.1);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  z-index: 2;
+}
+
+.bra-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.bra-cell_access .bra-cell__ft {
+  padding-right: 22px;
+  position: relative;
+}
+
+.bra-cell__ft {
+  text-align: right;
+  color: rgba(0,0,0,0.5);
+}
