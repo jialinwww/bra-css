@@ -461,3 +461,18 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 .is-relative {
   position: relative !important;
 }
+.is-absolute{
+  position:absolute;
+  &.is-right{
+    right:0;
+  }
+  &.is-top{
+    top:0;
+  }
+  &.is-left{
+    left:0;
+  }
+  &.is-bottom{
+    bottom:0;
+  }
+}
