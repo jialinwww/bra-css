@@ -1,16 +1,16 @@
 /* 下拉刷新页面 */
-.bra-pull{
-  margin-top:-50px;
-  min-height:calc(100vh - 81px);
-}
-.bra-pull .bra-pull-box{
-  color:rgba(69, 90, 100, .6);
-  font-size:14px;
-  height:50px;
-  line-height:50px;
-  text-align:center;
-}
+.bra-pull {
+  margin-top: -50px;
+  min-height: calc(100vh - 81px);
 
+  .bra-pull-box {
+    color: rgba(69, 90, 100, .6);
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
 
 .bra-cells {
   margin-top: 8px;
@@ -18,13 +18,37 @@
   font-size: 17px;
   overflow: hidden;
   position: relative;
+
+
+  .bra-cell {
+    padding: $size-small;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+
+
+  }
 }
-.bra-cell {
-  padding: $size-small ;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+
+.bra-cell_access .bra-cell__ft:after {
+  content: " ";
+  width: 12px;
+  height: 24px;
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  background-color: currentColor;
+  color: rgba(0,0,0,0.3);
+  -webkit-mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+  mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -12px;
 }
 
 .bra-cell:after {
@@ -34,8 +58,8 @@
   bottom: 0;
   right: 0;
   height: 1px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  color: rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
   -webkit-transform: scaleY(0.5);
@@ -56,5 +80,5 @@
 
 .bra-cell__ft {
   text-align: right;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
