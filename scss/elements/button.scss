@@ -51,7 +51,7 @@ $button-static-border-color: $border !default;
   font-size: $size-large;
 }
 
-.button {
+.bra-button {
   @extend %control;
 
   @extend %unselectable;
@@ -376,13 +376,13 @@ $button-static-border-color: $border !default;
   }
 }
 
-.buttons {
+.bra-buttons {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  .button {
+  .bra-button {
     margin-bottom: 0.5rem;
 
     &:not(:last-child):not(.is-fullwidth) {

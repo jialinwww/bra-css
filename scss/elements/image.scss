@@ -12,6 +12,10 @@ $dimensions: 16 24 32 48 64 96 128 !default;
     &.is-rounded {
       border-radius: $radius-rounded;
     }
+    &.is-radius{
+
+      border-radius: $radius;
+    }
   }
 
   &.is-fullwidth {
