@@ -1,0 +1,28 @@
+$quote_text_color : $grey;
+
+.blockquote{
+
+  margin-bottom: $margin-gap;
+  padding: $padding-gap;
+  line-height: $body-line-height;
+  border-left: 5px solid $primary;
+  border-radius: 0 $radius $radius 0;
+  background-color: #f2f2f2;
+
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+
+    &.is-#{$name} {
+      border-color: $color;
+      color: $quote_text_color;
+
+      &:hover,
+      &.is-hovered {
+        border-color:  bulmaDarken($color , 8%);
+        color: bulmaDarken($quote_text_color , 18%);
+      }
+    }
+  }
+
+}

@@ -1,11 +1,11 @@
 {
-  "name": "braui",
+  "name": "bra-css",
   "version": "0.0.1",
-  "homepage": "https://www.bra.ac",
+  "homepage": "https://www.braui.org",
   "author": {
     "name": "jialin",
     "email": "1620298436@qa.com",
-    "url": "https://www.bra.ac"
+    "url": "https://www.braui.org"
   },
   "description": "Bra CSS framework based on Flexbox",
   "main": "bra.scss",
@@ -50,6 +50,6 @@
     "README.md"
   ],
   "dependencies": {
-    "vue": "^2.6.11"
+
   }
 }
