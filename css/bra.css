@@ -91,7 +91,7 @@
   border: 1px solid transparent;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1rem;
+  font-size: inherit;
   height: 2.5em;
   justify-content: flex-start;
   line-height: 1.5;
