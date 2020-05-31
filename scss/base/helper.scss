@@ -438,7 +438,7 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 
 // Other
 .is-padding{
-  &.all{
+  &.p-a{
     padding: $padding-gap;
   }
   &.p-l{
@@ -530,4 +530,11 @@ $box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($s
   border-radius: $radius-rounded;
   padding-left: calc(#{$control-padding-horizontal} + 0.375em);
   padding-right: calc(#{$control-padding-horizontal} + 0.375em);
+}
+
+.is-fill-h{
+  height:100%;
+}
+.is-fill-w{
+  width:100%;
 }

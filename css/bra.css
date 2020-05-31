@@ -207,7 +207,7 @@ th:not([align]) {
 
 html {
   background-color: white;
-  font-size: 16px;
+  font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -1495,44 +1495,44 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   }
 }
 
-.is-padding.all {
-  padding: 1.25rem;
+.is-padding.p-a {
+  padding: 0.6rem;
 }
 
 .is-padding.p-l {
-  padding-left: 1.25rem;
+  padding-left: 0.6rem;
 }
 
 .is-padding.p-r {
-  padding-right: 1.25rem;
+  padding-right: 0.6rem;
 }
 
 .is-padding.p-t {
-  padding-top: 1.25rem;
+  padding-top: 0.6rem;
 }
 
 .is-padding.p-b {
-  padding-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
 }
 
 .is-margin.m-a {
-  margin: 1.25rem;
+  margin: 0.6rem;
 }
 
 .is-margin.m-l {
-  margin-left: 1.25rem;
+  margin-left: 0.6rem;
 }
 
 .is-margin.m-r {
-  margin-right: 1.25rem;
+  margin-right: 0.6rem;
 }
 
 .is-margin.m-t {
-  margin-top: 1.25rem;
+  margin-top: 0.6rem;
 }
 
 .is-margin.m-b {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.6rem;
 }
 
 .is-marginless {
@@ -1592,6 +1592,14 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   border-radius: 290486px;
   padding-left: calc(calc(0.75em - 1px) + 0.375em);
   padding-right: calc(calc(0.75em - 1px) + 0.375em);
+}
+
+.is-fill-h {
+  height: 100%;
+}
+
+.is-fill-w {
+  width: 100%;
 }
 
 .bra-button {
@@ -3549,8 +3557,8 @@ a.bra-tag:hover {
 }
 
 .blockquote {
-  margin-bottom: 1.25rem;
-  padding: 1.25rem;
+  margin-bottom: 10px;
+  padding: 10px;
   line-height: 1.5;
   border-left: 5px solid #00d1b2;
   border-radius: 0 4px 4px 0;
@@ -4900,7 +4908,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .bra-cell__hd i, .bra-cell__hd img {
-  margin-right: 1.25rem;
+  margin-right: 0.6rem;
 }
 
 .bra-cell__bd {

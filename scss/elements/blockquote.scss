@@ -1,9 +1,10 @@
 $quote_text_color : $grey;
-
+$blockquote-margin-gap :10px !default;
+$blockquote-padding-gap : 10px !default;
 .blockquote{
 
-  margin-bottom: $margin-gap;
-  padding: $padding-gap;
+  margin-bottom: $blockquote-margin-gap;
+  padding: $blockquote-padding-gap;
   line-height: $body-line-height;
   border-left: 5px solid $primary;
   border-radius: 0 $radius $radius 0;
