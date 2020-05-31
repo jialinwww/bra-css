@@ -17,20 +17,7 @@ $menu-label-letter-spacing: 0.1em !default;
 $menu-label-spacing: 1em !default;
 
 .menu {
-  font-size: $size-normal;
-
-  // Sizes
-  &.is-small {
-    font-size: $size-small;
-  }
-
-  &.is-medium {
-    font-size: $size-medium;
-  }
-
-  &.is-large {
-    font-size: $size-large;
-  }
+  font-size: $size-normal; 
 }
 
 .menu-list {

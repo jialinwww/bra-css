@@ -210,17 +210,4 @@ $tabs-toggle-link-active-color: $link-invert !default;
       }
     }
   }
-
-  // Sizes
-  &.is-small {
-    font-size: $size-small;
-  }
-
-  &.is-medium {
-    font-size: $size-medium;
-  }
-
-  &.is-large {
-    font-size: $size-large;
-  }
 }

@@ -29,19 +29,6 @@ $textarea-min-height: 8em !default;
     }
   }
 
-  // Sizes
-  &.is-small {
-    @include control-small;
-  }
-
-  &.is-medium {
-    @include control-medium;
-  }
-
-  &.is-large {
-    @include control-large;
-  }
-
   // Modifiers
   &.is-fullwidth {
     display: block;

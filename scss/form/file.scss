@@ -60,31 +60,6 @@ $file-name-max-width: 16em !default;
     }
   }
 
-  // Sizes
-  &.is-small {
-    font-size: $size-small;
-  }
-
-  &.is-medium {
-    font-size: $size-medium;
-
-    .file-icon {
-      .fa {
-        font-size: 21px;
-      }
-    }
-  }
-
-  &.is-large {
-    font-size: $size-large;
-
-    .file-icon {
-      .fa {
-        font-size: 28px;
-      }
-    }
-  }
-
   // Modifiers
   &.has-name {
     .file-cta {
@@ -129,24 +104,6 @@ $file-name-max-width: 16em !default;
 
       .fa {
         font-size: 21px;
-      }
-    }
-
-    &.is-small {
-      .file-icon .fa {
-        font-size: 14px;
-      }
-    }
-
-    &.is-medium {
-      .file-icon .fa {
-        font-size: 28px;
-      }
-    }
-
-    &.is-large {
-      .file-icon .fa {
-        font-size: 35px;
       }
     }
 

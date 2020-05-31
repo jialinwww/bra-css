@@ -79,13 +79,6 @@ $button-static-border-color: $border !default;
   }
 
   .icon {
-    &,
-    &.is-small,
-    &.is-medium,
-    &.is-large {
-      height: 1.5em;
-      width: 1.5em;
-    }
 
     &:first-child:not(:last-child) {
       margin-left: calc(#{-1 / 2 * $button-padding-horizontal} - #{$button-border-width});
@@ -317,23 +310,6 @@ $button-static-border-color: $border !default;
     }
   }
 
-  // Sizes
-  &.is-small {
-    @include button-small;
-  }
-
-  &.is-normal {
-    @include button-normal;
-  }
-
-  &.is-medium {
-    @include button-medium;
-  }
-
-  &.is-large {
-    @include button-large;
-  }
-
   // Modifiers
   &[disabled],
   fieldset[disabled] & {
@@ -398,24 +374,6 @@ $button-static-border-color: $border !default;
     margin-bottom: 1rem;
   }
 
-  // Sizes
-  &.are-small {
-    .button:not(.is-normal):not(.is-medium):not(.is-large) {
-      @include button-small;
-    }
-  }
-
-  &.are-medium {
-    .button:not(.is-small):not(.is-normal):not(.is-large) {
-      @include button-medium;
-    }
-  }
-
-  &.are-large {
-    .button:not(.is-small):not(.is-normal):not(.is-medium) {
-      @include button-large;
-    }
-  }
 
   &.has-addons {
     .button {

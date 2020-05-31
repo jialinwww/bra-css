@@ -166,7 +166,7 @@ $alignments: ("centered": "center", "justified": "justify", "left": "left", "rig
     }
   }
 
-  .has-background-#{$name} {
+  .has-bg-#{$name} {
     background-color: $color !important;
   }
 }
@@ -176,7 +176,7 @@ $alignments: ("centered": "center", "justified": "justify", "left": "left", "rig
     color: $shade !important;
   }
 
-  .has-background-#{$name} {
+  .has-bg-#{$name} {
     background-color: $shade !important;
   }
 }
@@ -436,8 +436,42 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
   }
 }
 
-
 // Other
+.is-padding{
+  &.all{
+    padding: $padding-gap;
+  }
+  &.p-l{
+    padding-left: $padding-gap;
+  }
+  &.p-r{
+    padding-right: $padding-gap;
+  }
+  &.p-t{
+    padding-top: $padding-gap;
+  }
+  &.p-b{
+    padding-bottom: $padding-gap;
+  }
+}
+
+.is-margin{
+  &.m-a{
+    margin: $margin-gap;
+  }
+  &.m-l{
+    margin-left: $margin-gap;
+  }
+  &.m-r{
+    margin-right: $margin-gap;
+  }
+  &.m-t{
+    margin-top: $margin-gap;
+  }
+  &.m-b{
+    margin-bottom: $margin-gap;
+  }
+}
 .is-marginless {
   margin: 0 !important;
 }
@@ -445,7 +479,13 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 .is-paddingless {
   padding: 0 !important;
 }
-
+// radius
+.is-radius-small{
+  border-radius:$radius;
+}
+.is-radius-large{
+  border-radius:$radius-large;
+}
 .is-radiusless {
   border-radius: 0 !important;
 }
@@ -476,3 +516,12 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
     bottom:0;
   }
 }
+
+$box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02) !default
+
+.is-box{
+  @extend %block;
+  box-shadow: $box-shadow;
+  display: block;
+}
+
