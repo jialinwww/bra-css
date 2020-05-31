@@ -17,14 +17,13 @@ $menu-label-letter-spacing: 0.1em !default;
 $menu-label-spacing: 1em !default;
 
 .menu {
-  font-size: $size-normal; 
+  font-size: $size-normal;
 }
 
 .menu-list {
   line-height: $menu-list-line-height;
 
   a {
-    border-radius: $menu-item-radius;
     color: $menu-item-color;
     display: block;
     padding: $menu-list-link-padding;

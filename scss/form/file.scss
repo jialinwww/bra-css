@@ -73,9 +73,6 @@ $file-name-max-width: 16em !default;
     }
 
     &.is-empty {
-      .file-cta {
-        border-radius: $file-radius;
-      }
 
       .file-name {
         display: none;

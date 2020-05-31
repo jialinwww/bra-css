@@ -34,22 +34,6 @@ $button-static-background-color: $scheme-main-ter !default;
 $button-static-border-color: $border !default;
 
 // The button sizes use mixins so they can be used at different breakpoints
-@mixin button-small {
-  border-radius: $radius-small;
-  font-size: $size-small;
-}
-
-@mixin button-normal {
-  font-size: $size-normal;
-}
-
-@mixin button-medium {
-  font-size: $size-medium;
-}
-
-@mixin button-large {
-  font-size: $size-large;
-}
 
 .bra-button {
   @extend %control;
@@ -343,12 +327,6 @@ $button-static-border-color: $border !default;
     color: $button-static-color;
     box-shadow: none;
     pointer-events: none;
-  }
-
-  &.is-rounded {
-    border-radius: $radius-rounded;
-    padding-left: calc(#{$button-padding-horizontal} + 0.25em);
-    padding-right: calc(#{$button-padding-horizontal} + 0.25em);
   }
 }
 

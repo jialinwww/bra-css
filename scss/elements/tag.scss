@@ -82,7 +82,6 @@ $tag-delete-margin: 1px !default;
 .bra-tag:not(body) {
   align-items: center;
   background-color: $tag-background-color;
-  border-radius: $tag-radius;
   color: $tag-color;
   display: inline-flex;
   height: 2em;
@@ -117,19 +116,6 @@ $tag-delete-margin: 1px !default;
         }
       }
     }
-  }
-
-  // Sizes
-  &.is-normal {
-    font-size: $size-small;
-  }
-
-  &.is-medium {
-    font-size: $size-normal;
-  }
-
-  &.is-large {
-    font-size: $size-medium;
   }
 
   .icon {

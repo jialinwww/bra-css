@@ -410,11 +410,6 @@ a.navbar-item,
       .navbar-end {
         align-items: center;
       }
-
-      a.navbar-item,
-      .navbar-link {
-        border-radius: $radius;
-      }
     }
 
     &.is-transparent {
@@ -477,7 +472,6 @@ a.navbar-item,
 
       .navbar-dropdown {
         border-bottom: $navbar-dropdown-border-top;
-        border-radius: $navbar-dropdown-radius $navbar-dropdown-radius 0 0;
         border-top: none;
         bottom: 100%;
         box-shadow: 0 -8px 8px bulmaRgba($scheme-invert, 0.1);
@@ -553,7 +547,6 @@ a.navbar-item,
 
     .navbar.is-spaced &,
     &.is-boxed {
-      border-radius: $navbar-dropdown-boxed-radius;
       border-top: none;
       box-shadow: $navbar-dropdown-boxed-shadow;
       display: block;

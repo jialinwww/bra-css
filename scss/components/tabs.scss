@@ -124,7 +124,6 @@ $tabs-toggle-link-active-color: $link-invert !default;
   &.is-boxed {
     a {
       border: 1px solid transparent;
-      border-radius: $tabs-boxed-link-radius $tabs-boxed-link-radius 0 0;
 
       &:hover {
         background-color: $tabs-boxed-link-hover-background-color;

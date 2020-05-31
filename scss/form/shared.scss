@@ -30,7 +30,6 @@ $input-radius: $radius !default;
 
   background-color: $input-background-color;
   border-color: $input-border-color;
-  border-radius: $input-radius;
   color: $input-color;
 
   @include placeholder {

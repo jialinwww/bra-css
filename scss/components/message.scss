@@ -23,7 +23,6 @@ $message-colors: $colors !default;
   @extend %block;
 
   background-color: $message-background-color;
-  border-radius: $message-radius;
   font-size: $size-normal;
 
   strong {
@@ -79,7 +78,6 @@ $message-colors: $colors !default;
 .message-header {
   align-items: center;
   background-color: $message-header-background-color;
-  border-radius: $message-header-radius $message-header-radius 0 0;
   color: $message-header-color;
   display: flex;
   font-weight: $message-header-weight;
@@ -103,7 +101,6 @@ $message-colors: $colors !default;
 
 .message-body {
   border-color: $message-body-border-color;
-  border-radius: $message-body-radius;
   border-style: solid;
   border-width: $message-body-border-width;
   color: $message-body-color;

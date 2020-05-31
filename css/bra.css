@@ -80,7 +80,6 @@
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 4px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -1577,6 +1576,12 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   display: block;
 }
 
+.is-rounded {
+  border-radius: 290486px;
+  padding-left: calc(calc(0.75em - 1px) + 0.375em);
+  padding-right: calc(calc(0.75em - 1px) + 0.375em);
+}
+
 .bra-button {
   background-color: white;
   border-color: #dbdbdb;
@@ -2849,12 +2854,6 @@ fieldset[disabled] .bra-button {
   pointer-events: none;
 }
 
-.bra-button.is-rounded {
-  border-radius: 290486px;
-  padding-left: calc(1em + 0.25em);
-  padding-right: calc(1em + 0.25em);
-}
-
 .bra-buttons {
   align-items: center;
   display: flex;
@@ -3383,7 +3382,6 @@ fieldset[disabled] .bra-button {
 .bra-tag:not(body) {
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 4px;
   color: #4a4a4a;
   display: inline-flex;
   height: 2em;
@@ -3477,18 +3475,6 @@ fieldset[disabled] .bra-button {
 .bra-tag:not(body).is-danger.is-light {
   background-color: #feecf0;
   color: #cc0f35;
-}
-
-.bra-tag:not(body).is-normal {
-  font-size: 0.9rem;
-}
-
-.bra-tag:not(body).is-medium {
-  font-size: 1rem;
-}
-
-.bra-tag:not(body).is-large {
-  font-size: 1.25rem;
 }
 
 .bra-tag:not(body) .icon:first-child:not(:last-child) {
@@ -3662,7 +3648,6 @@ a.bra-tag:hover {
 .bra-input, .bra-textarea, .select select {
   background-color: white;
   border-color: #dbdbdb;
-  border-radius: 4px;
   color: #363636;
 }
 
@@ -3871,12 +3856,6 @@ fieldset[disabled] .select select:-ms-input-placeholder,
   width: auto;
 }
 
-.bra-input.is-rounded {
-  border-radius: 290486px;
-  padding-left: calc(calc(0.75em - 1px) + 0.375em);
-  padding-right: calc(calc(0.75em - 1px) + 0.375em);
-}
-
 .bra-input.is-static {
   background-color: transparent;
   border-color: transparent;
@@ -3950,7 +3929,6 @@ fieldset[disabled] .radio {
 }
 
 .select.is-rounded select {
-  border-radius: 290486px;
   padding-left: 1em;
 }
 
@@ -4423,10 +4401,6 @@ fieldset[disabled] .select select:hover {
 .file.has-name .file-name {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-}
-
-.file.has-name.is-empty .file-cta {
-  border-radius: 4px;
 }
 
 .file.has-name.is-empty .file-name {
@@ -5021,7 +4995,6 @@ fieldset[disabled] .select select:hover {
 
 .bra-tabs.is-boxed a {
   border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
 }
 
 .bra-tabs.is-boxed a:hover {
@@ -6001,10 +5974,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   .navbar.is-spaced .navbar-end {
     align-items: center;
   }
-  .navbar.is-spaced a.navbar-item,
-  .navbar.is-spaced .navbar-link {
-    border-radius: 4px;
-  }
   .navbar.is-transparent a.navbar-item:focus, .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
   .navbar.is-transparent .navbar-link:focus,
   .navbar.is-transparent .navbar-link:hover,
@@ -6038,7 +6007,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .navbar-item.has-dropdown-up .navbar-dropdown {
     border-bottom: 2px solid #dbdbdb;
-    border-radius: 6px 6px 0 0;
     border-top: none;
     bottom: 100%;
     box-shadow: 0 -8px 8px rgba(8, 7, 7, 0.1);
@@ -6094,7 +6062,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     color: #3273dc;
   }
   .navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed {
-    border-radius: 6px;
     border-top: none;
     box-shadow: 0 8px 8px rgba(8, 7, 7, 0.1), 0 0 0 1px rgba(8, 7, 7, 0.1);
     display: block;
@@ -6177,7 +6144,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .menu-list a {
-  border-radius: 2px;
   color: #4a4a4a;
   display: block;
   padding: 0.5em 0.75em;
