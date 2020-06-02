@@ -35,7 +35,7 @@ $button-static-border-color: $border !default;
 
 // The button sizes use mixins so they can be used at different breakpoints
 
-.bra-button {
+.bra-btn {
   @extend %control;
 
   @extend %unselectable;
@@ -330,13 +330,13 @@ $button-static-border-color: $border !default;
   }
 }
 
-.bra-buttons {
+.bra-btns {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  .bra-button {
+  .bra-btn {
     margin-bottom: 0.5rem;
 
     &:not(:last-child):not(.is-fullwidth) {
@@ -354,7 +354,7 @@ $button-static-border-color: $border !default;
 
 
   &.has-addons {
-    .button {
+    .bra-btn {
       &:not(:first-child) {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
