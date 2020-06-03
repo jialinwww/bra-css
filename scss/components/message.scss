@@ -29,7 +29,7 @@ $message-colors: $colors !default;
     color: currentColor;
   }
 
-  a:not(.button):not(.tag):not(.dropdown-item) {
+  a:not(.bra-btn):not(.tag):not(.dropdown-item) {
     color: currentColor;
     text-decoration: underline;
   }
