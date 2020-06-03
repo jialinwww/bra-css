@@ -166,3 +166,7 @@ table {
     color: $text-strong;
   }
 }
+// for vue page
+[v-cloak]{
+  display: none;
+}
