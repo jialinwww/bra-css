@@ -46,34 +46,34 @@ $help-size: $size-small !default;
       }
 
       &:not(:first-child):not(:last-child) {
-        .button,
-        .input,
-        .select select {
+        .bra-btn,
+        .bra-input,
+        .bra-select select {
           border-radius: 0;
         }
       }
 
       &:first-child:not(:only-child) {
-        .button,
-        .input,
-        .select select {
+        .bra-btn,
+        .bra-input,
+        .bra-select select {
           border-bottom-right-radius: 0;
           border-top-right-radius: 0;
         }
       }
 
       &:last-child:not(:only-child) {
-        .button,
-        .input,
-        .select select {
+        .bra-btn,
+        .bra-input,
+        .bra-select select {
           border-bottom-left-radius: 0;
           border-top-left-radius: 0;
         }
       }
 
-      .button,
-      .input,
-      .select select {
+      .bra-btn,
+      .bra-input,
+      .bra-select select {
         &:not([disabled]) {
           &:hover,
           &.is-hovered {
@@ -228,8 +228,8 @@ $help-size: $size-small !default;
   // Modifiers
   &.has-icons-left,
   &.has-icons-right {
-    .input,
-    .select {
+    .bra-input,
+    .bra-select {
       &:focus {
         & ~ .icon {
           color: $input-icon-active-color;
@@ -249,8 +249,8 @@ $help-size: $size-small !default;
   }
 
   &.has-icons-left {
-    .input,
-    .select select {
+    .bra-input,
+    .bra-select select {
       padding-left: $input-height;
     }
 
@@ -260,8 +260,8 @@ $help-size: $size-small !default;
   }
 
   &.has-icons-right {
-    .input,
-    .select select {
+    .bra-input,
+    .bra-select select {
       padding-right: $input-height;
     }
 
