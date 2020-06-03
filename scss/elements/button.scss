@@ -398,7 +398,7 @@ $button-static-border-color: $border !default;
     justify-content: center;
 
     &:not(.has-addons) {
-      .button:not(.is-fullwidth) {
+      .bra-btn:not(.is-fullwidth) {
         margin-left: 0.25rem;
         margin-right: 0.25rem;
       }
@@ -409,7 +409,7 @@ $button-static-border-color: $border !default;
     justify-content: flex-end;
 
     &:not(.has-addons) {
-      .button:not(.is-fullwidth) {
+      .bra-btn:not(.is-fullwidth) {
         margin-left: 0.25rem;
         margin-right: 0.25rem;
       }
