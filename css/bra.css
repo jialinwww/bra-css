@@ -24,7 +24,7 @@
   user-select: none;
 }
 
-.select:not(.is-multiple):not(.is-loading)::after, .navbar-link:not(.is-arrowless)::after {
+.bra-select:not(.is-multiple):not(.is-loading)::after, .navbar-link:not(.is-arrowless)::after {
   border: 3px solid transparent;
   border-radius: 2px;
   border-right: 0;
@@ -45,7 +45,7 @@
   margin-bottom: 0rem;
 }
 
-.bra-btn.is-loading::after, .select.is-loading::after, .control.is-loading::after {
+.bra-btn.is-loading::after, .bra-select.is-loading::after, .control.is-loading::after {
   -webkit-animation: spinAround 500ms infinite linear;
           animation: spinAround 500ms infinite linear;
   border: 2px solid #dbdbdb;
@@ -83,7 +83,7 @@
   top: 0;
 }
 
-.bra-btn, .bra-input, .bra-textarea, .select select, .file-cta,
+.bra-btn, .bra-input, .bra-textarea, .bra-select select, .file-cta,
 .file-name {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -103,21 +103,21 @@
   vertical-align: top;
 }
 
-.bra-btn:focus, .bra-input:focus, .bra-textarea:focus, .select select:focus, .file-cta:focus,
-.file-name:focus, .is-focused.bra-btn, .is-focused.bra-input, .is-focused.bra-textarea, .select select.is-focused, .is-focused.file-cta,
-.is-focused.file-name, .bra-btn:active, .bra-input:active, .bra-textarea:active, .select select:active, .file-cta:active,
-.file-name:active, .is-active.bra-btn, .is-active.bra-input, .is-active.bra-textarea, .select select.is-active, .is-active.file-cta,
+.bra-btn:focus, .bra-input:focus, .bra-textarea:focus, .bra-select select:focus, .file-cta:focus,
+.file-name:focus, .is-focused.bra-btn, .is-focused.bra-input, .is-focused.bra-textarea, .bra-select select.is-focused, .is-focused.file-cta,
+.is-focused.file-name, .bra-btn:active, .bra-input:active, .bra-textarea:active, .bra-select select:active, .file-cta:active,
+.file-name:active, .is-active.bra-btn, .is-active.bra-input, .is-active.bra-textarea, .bra-select select.is-active, .is-active.file-cta,
 .is-active.file-name {
   outline: none;
 }
 
-.bra-btn[disabled], .bra-input[disabled], .bra-textarea[disabled], .select select[disabled], .file-cta[disabled],
+.bra-btn[disabled], .bra-input[disabled], .bra-textarea[disabled], .bra-select select[disabled], .file-cta[disabled],
 .file-name[disabled],
 fieldset[disabled] .bra-btn,
 fieldset[disabled] .bra-input,
 fieldset[disabled] .bra-textarea,
-fieldset[disabled] .select select,
-.select fieldset[disabled] select,
+fieldset[disabled] .bra-select select,
+.bra-select fieldset[disabled] select,
 fieldset[disabled] .file-cta,
 fieldset[disabled] .file-name {
   cursor: not-allowed;
@@ -340,6 +340,10 @@ table th:not([align]) {
 
 table th {
   color: #363636;
+}
+
+[v-cloak] {
+  display: none;
 }
 
 .is-clearfix::after {
@@ -2933,7 +2937,7 @@ fieldset[disabled] .bra-btn {
   justify-content: center;
 }
 
-.bra-btns.is-centered:not(.has-addons) .button:not(.is-fullwidth) {
+.bra-btns.is-centered:not(.has-addons) .bra-btn:not(.is-fullwidth) {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -2942,7 +2946,7 @@ fieldset[disabled] .bra-btn {
   justify-content: flex-end;
 }
 
-.bra-btns.is-right:not(.has-addons) .button:not(.is-fullwidth) {
+.bra-btns.is-right:not(.has-addons) .bra-btn:not(.is-fullwidth) {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -3665,77 +3669,77 @@ a.bra-tag:hover {
   color: #4d4d4d;
 }
 
-.bra-input, .bra-textarea, .select select {
+.bra-input, .bra-textarea, .bra-select select {
   background-color: white;
   border-color: #dbdbdb;
   color: #363636;
 }
 
-.bra-input::-moz-placeholder, .bra-textarea::-moz-placeholder, .select select::-moz-placeholder {
+.bra-input::-moz-placeholder, .bra-textarea::-moz-placeholder, .bra-select select::-moz-placeholder {
   color: rgba(54, 54, 54, 0.3);
 }
 
-.bra-input::-webkit-input-placeholder, .bra-textarea::-webkit-input-placeholder, .select select::-webkit-input-placeholder {
+.bra-input::-webkit-input-placeholder, .bra-textarea::-webkit-input-placeholder, .bra-select select::-webkit-input-placeholder {
   color: rgba(54, 54, 54, 0.3);
 }
 
-.bra-input:-moz-placeholder, .bra-textarea:-moz-placeholder, .select select:-moz-placeholder {
+.bra-input:-moz-placeholder, .bra-textarea:-moz-placeholder, .bra-select select:-moz-placeholder {
   color: rgba(54, 54, 54, 0.3);
 }
 
-.bra-input:-ms-input-placeholder, .bra-textarea:-ms-input-placeholder, .select select:-ms-input-placeholder {
+.bra-input:-ms-input-placeholder, .bra-textarea:-ms-input-placeholder, .bra-select select:-ms-input-placeholder {
   color: rgba(54, 54, 54, 0.3);
 }
 
-.bra-input:hover, .bra-textarea:hover, .select select:hover, .is-hovered.bra-input, .is-hovered.bra-textarea, .select select.is-hovered {
+.bra-input:hover, .bra-textarea:hover, .bra-select select:hover, .is-hovered.bra-input, .is-hovered.bra-textarea, .bra-select select.is-hovered {
   border-color: #b5b5b5;
 }
 
-.bra-input:focus, .bra-textarea:focus, .select select:focus, .is-focused.bra-input, .is-focused.bra-textarea, .select select.is-focused, .bra-input:active, .bra-textarea:active, .select select:active, .is-active.bra-input, .is-active.bra-textarea, .select select.is-active {
+.bra-input:focus, .bra-textarea:focus, .bra-select select:focus, .is-focused.bra-input, .is-focused.bra-textarea, .bra-select select.is-focused, .bra-input:active, .bra-textarea:active, .bra-select select:active, .is-active.bra-input, .is-active.bra-textarea, .bra-select select.is-active {
   border-color: #3273dc;
   box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
 
-.bra-input[disabled], .bra-textarea[disabled], .select select[disabled],
+.bra-input[disabled], .bra-textarea[disabled], .bra-select select[disabled],
 fieldset[disabled] .bra-input,
 fieldset[disabled] .bra-textarea,
-fieldset[disabled] .select select,
-.select fieldset[disabled] select {
+fieldset[disabled] .bra-select select,
+.bra-select fieldset[disabled] select {
   background-color: whitesmoke;
   border-color: whitesmoke;
   box-shadow: none;
   color: #7a7a7a;
 }
 
-.bra-input[disabled]::-moz-placeholder, .bra-textarea[disabled]::-moz-placeholder, .select select[disabled]::-moz-placeholder,
+.bra-input[disabled]::-moz-placeholder, .bra-textarea[disabled]::-moz-placeholder, .bra-select select[disabled]::-moz-placeholder,
 fieldset[disabled] .bra-input::-moz-placeholder,
 fieldset[disabled] .bra-textarea::-moz-placeholder,
-fieldset[disabled] .select select::-moz-placeholder,
-.select fieldset[disabled] select::-moz-placeholder {
+fieldset[disabled] .bra-select select::-moz-placeholder,
+.bra-select fieldset[disabled] select::-moz-placeholder {
   color: rgba(122, 122, 122, 0.3);
 }
 
-.bra-input[disabled]::-webkit-input-placeholder, .bra-textarea[disabled]::-webkit-input-placeholder, .select select[disabled]::-webkit-input-placeholder,
+.bra-input[disabled]::-webkit-input-placeholder, .bra-textarea[disabled]::-webkit-input-placeholder, .bra-select select[disabled]::-webkit-input-placeholder,
 fieldset[disabled] .bra-input::-webkit-input-placeholder,
 fieldset[disabled] .bra-textarea::-webkit-input-placeholder,
-fieldset[disabled] .select select::-webkit-input-placeholder,
-.select fieldset[disabled] select::-webkit-input-placeholder {
+fieldset[disabled] .bra-select select::-webkit-input-placeholder,
+.bra-select fieldset[disabled] select::-webkit-input-placeholder {
   color: rgba(122, 122, 122, 0.3);
 }
 
-.bra-input[disabled]:-moz-placeholder, .bra-textarea[disabled]:-moz-placeholder, .select select[disabled]:-moz-placeholder,
+.bra-input[disabled]:-moz-placeholder, .bra-textarea[disabled]:-moz-placeholder, .bra-select select[disabled]:-moz-placeholder,
 fieldset[disabled] .bra-input:-moz-placeholder,
 fieldset[disabled] .bra-textarea:-moz-placeholder,
-fieldset[disabled] .select select:-moz-placeholder,
-.select fieldset[disabled] select:-moz-placeholder {
+fieldset[disabled] .bra-select select:-moz-placeholder,
+.bra-select fieldset[disabled] select:-moz-placeholder {
   color: rgba(122, 122, 122, 0.3);
 }
 
-.bra-input[disabled]:-ms-input-placeholder, .bra-textarea[disabled]:-ms-input-placeholder, .select select[disabled]:-ms-input-placeholder,
+.bra-input[disabled]:-ms-input-placeholder, .bra-textarea[disabled]:-ms-input-placeholder, .bra-select select[disabled]:-ms-input-placeholder,
 fieldset[disabled] .bra-input:-ms-input-placeholder,
 fieldset[disabled] .bra-textarea:-ms-input-placeholder,
-fieldset[disabled] .select select:-ms-input-placeholder,
-.select fieldset[disabled] select:-ms-input-placeholder {
+fieldset[disabled] .bra-select select:-ms-input-placeholder,
+.bra-select fieldset[disabled] select:-ms-input-placeholder {
   color: rgba(122, 122, 122, 0.3);
 }
 
@@ -3930,28 +3934,28 @@ fieldset[disabled] .radio {
   margin-left: 0.5em;
 }
 
-.select {
+.bra-select {
   display: inline-block;
   max-width: 100%;
   position: relative;
   vertical-align: top;
 }
 
-.select:not(.is-multiple) {
+.bra-select:not(.is-multiple) {
   height: 2.5em;
 }
 
-.select:not(.is-multiple):not(.is-loading)::after {
+.bra-select:not(.is-multiple):not(.is-loading)::after {
   border-color: #3273dc;
   right: 1.125em;
   z-index: 4;
 }
 
-.select.is-rounded select {
+.bra-select.is-rounded select {
   padding-left: 1em;
 }
 
-.select select {
+.bra-select select {
   cursor: pointer;
   display: block;
   font-size: 1em;
@@ -3959,205 +3963,205 @@ fieldset[disabled] .radio {
   outline: none;
 }
 
-.select select::-ms-expand {
+.bra-select select::-ms-expand {
   display: none;
 }
 
-.select select[disabled]:hover,
-fieldset[disabled] .select select:hover {
+.bra-select select[disabled]:hover,
+fieldset[disabled] .bra-select select:hover {
   border-color: whitesmoke;
 }
 
-.select select:not([multiple]) {
+.bra-select select:not([multiple]) {
   padding-right: 2.5em;
 }
 
-.select select[multiple] {
+.bra-select select[multiple] {
   height: auto;
   padding: 0;
 }
 
-.select select[multiple] option {
+.bra-select select[multiple] option {
   padding: 0.5em 1em;
 }
 
-.select:not(.is-multiple):not(.is-loading):hover::after {
+.bra-select:not(.is-multiple):not(.is-loading):hover::after {
   border-color: #363636;
 }
 
-.select.is-white:not(:hover)::after {
+.bra-select.is-white:not(:hover)::after {
   border-color: white;
 }
 
-.select.is-white select {
+.bra-select.is-white select {
   border-color: white;
 }
 
-.select.is-white select:hover, .select.is-white select.is-hovered {
+.bra-select.is-white select:hover, .bra-select.is-white select.is-hovered {
   border-color: #f2f2f2;
 }
 
-.select.is-white select:focus, .select.is-white select.is-focused, .select.is-white select:active, .select.is-white select.is-active {
+.bra-select.is-white select:focus, .bra-select.is-white select.is-focused, .bra-select.is-white select:active, .bra-select.is-white select.is-active {
   box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
 }
 
-.select.is-black:not(:hover)::after {
+.bra-select.is-black:not(:hover)::after {
   border-color: #080707;
 }
 
-.select.is-black select {
+.bra-select.is-black select {
   border-color: #080707;
 }
 
-.select.is-black select:hover, .select.is-black select.is-hovered {
+.bra-select.is-black select:hover, .bra-select.is-black select.is-hovered {
   border-color: black;
 }
 
-.select.is-black select:focus, .select.is-black select.is-focused, .select.is-black select:active, .select.is-black select.is-active {
+.bra-select.is-black select:focus, .bra-select.is-black select.is-focused, .bra-select.is-black select:active, .bra-select.is-black select.is-active {
   box-shadow: 0 0 0 0.125em rgba(8, 7, 7, 0.25);
 }
 
-.select.is-light:not(:hover)::after {
+.bra-select.is-light:not(:hover)::after {
   border-color: whitesmoke;
 }
 
-.select.is-light select {
+.bra-select.is-light select {
   border-color: whitesmoke;
 }
 
-.select.is-light select:hover, .select.is-light select.is-hovered {
+.bra-select.is-light select:hover, .bra-select.is-light select.is-hovered {
   border-color: #e8e8e8;
 }
 
-.select.is-light select:focus, .select.is-light select.is-focused, .select.is-light select:active, .select.is-light select.is-active {
+.bra-select.is-light select:focus, .bra-select.is-light select.is-focused, .bra-select.is-light select:active, .bra-select.is-light select.is-active {
   box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25);
 }
 
-.select.is-dark:not(:hover)::after {
+.bra-select.is-dark:not(:hover)::after {
   border-color: #363636;
 }
 
-.select.is-dark select {
+.bra-select.is-dark select {
   border-color: #363636;
 }
 
-.select.is-dark select:hover, .select.is-dark select.is-hovered {
+.bra-select.is-dark select:hover, .bra-select.is-dark select.is-hovered {
   border-color: #292929;
 }
 
-.select.is-dark select:focus, .select.is-dark select.is-focused, .select.is-dark select:active, .select.is-dark select.is-active {
+.bra-select.is-dark select:focus, .bra-select.is-dark select.is-focused, .bra-select.is-dark select:active, .bra-select.is-dark select.is-active {
   box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
 }
 
-.select.is-primary:not(:hover)::after {
+.bra-select.is-primary:not(:hover)::after {
   border-color: #00d1b2;
 }
 
-.select.is-primary select {
+.bra-select.is-primary select {
   border-color: #00d1b2;
 }
 
-.select.is-primary select:hover, .select.is-primary select.is-hovered {
+.bra-select.is-primary select:hover, .bra-select.is-primary select.is-hovered {
   border-color: #00b89c;
 }
 
-.select.is-primary select:focus, .select.is-primary select.is-focused, .select.is-primary select:active, .select.is-primary select.is-active {
+.bra-select.is-primary select:focus, .bra-select.is-primary select.is-focused, .bra-select.is-primary select:active, .bra-select.is-primary select.is-active {
   box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
 }
 
-.select.is-link:not(:hover)::after {
+.bra-select.is-link:not(:hover)::after {
   border-color: #3273dc;
 }
 
-.select.is-link select {
+.bra-select.is-link select {
   border-color: #3273dc;
 }
 
-.select.is-link select:hover, .select.is-link select.is-hovered {
+.bra-select.is-link select:hover, .bra-select.is-link select.is-hovered {
   border-color: #2366d1;
 }
 
-.select.is-link select:focus, .select.is-link select.is-focused, .select.is-link select:active, .select.is-link select.is-active {
+.bra-select.is-link select:focus, .bra-select.is-link select.is-focused, .bra-select.is-link select:active, .bra-select.is-link select.is-active {
   box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
 
-.select.is-info:not(:hover)::after {
+.bra-select.is-info:not(:hover)::after {
   border-color: #3298dc;
 }
 
-.select.is-info select {
+.bra-select.is-info select {
   border-color: #3298dc;
 }
 
-.select.is-info select:hover, .select.is-info select.is-hovered {
+.bra-select.is-info select:hover, .bra-select.is-info select.is-hovered {
   border-color: #238cd1;
 }
 
-.select.is-info select:focus, .select.is-info select.is-focused, .select.is-info select:active, .select.is-info select.is-active {
+.bra-select.is-info select:focus, .bra-select.is-info select.is-focused, .bra-select.is-info select:active, .bra-select.is-info select.is-active {
   box-shadow: 0 0 0 0.125em rgba(50, 152, 220, 0.25);
 }
 
-.select.is-success:not(:hover)::after {
+.bra-select.is-success:not(:hover)::after {
   border-color: #48c774;
 }
 
-.select.is-success select {
+.bra-select.is-success select {
   border-color: #48c774;
 }
 
-.select.is-success select:hover, .select.is-success select.is-hovered {
+.bra-select.is-success select:hover, .bra-select.is-success select.is-hovered {
   border-color: #3abb67;
 }
 
-.select.is-success select:focus, .select.is-success select.is-focused, .select.is-success select:active, .select.is-success select.is-active {
+.bra-select.is-success select:focus, .bra-select.is-success select.is-focused, .bra-select.is-success select:active, .bra-select.is-success select.is-active {
   box-shadow: 0 0 0 0.125em rgba(72, 199, 116, 0.25);
 }
 
-.select.is-warning:not(:hover)::after {
+.bra-select.is-warning:not(:hover)::after {
   border-color: #ffdd57;
 }
 
-.select.is-warning select {
+.bra-select.is-warning select {
   border-color: #ffdd57;
 }
 
-.select.is-warning select:hover, .select.is-warning select.is-hovered {
+.bra-select.is-warning select:hover, .bra-select.is-warning select.is-hovered {
   border-color: #ffd83d;
 }
 
-.select.is-warning select:focus, .select.is-warning select.is-focused, .select.is-warning select:active, .select.is-warning select.is-active {
+.bra-select.is-warning select:focus, .bra-select.is-warning select.is-focused, .bra-select.is-warning select:active, .bra-select.is-warning select.is-active {
   box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
 }
 
-.select.is-danger:not(:hover)::after {
+.bra-select.is-danger:not(:hover)::after {
   border-color: #f14668;
 }
 
-.select.is-danger select {
+.bra-select.is-danger select {
   border-color: #f14668;
 }
 
-.select.is-danger select:hover, .select.is-danger select.is-hovered {
+.bra-select.is-danger select:hover, .bra-select.is-danger select.is-hovered {
   border-color: #ef2e55;
 }
 
-.select.is-danger select:focus, .select.is-danger select.is-focused, .select.is-danger select:active, .select.is-danger select.is-active {
+.bra-select.is-danger select:focus, .bra-select.is-danger select.is-focused, .bra-select.is-danger select:active, .bra-select.is-danger select.is-active {
   box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
 }
 
-.select.is-disabled::after {
+.bra-select.is-disabled::after {
   border-color: #7a7a7a;
 }
 
-.select.is-fullwidth {
+.bra-select.is-fullwidth {
   width: 100%;
 }
 
-.select.is-fullwidth select {
+.bra-select.is-fullwidth select {
   width: 100%;
 }
 
-.select.is-loading::after {
+.bra-select.is-loading::after {
   margin-top: 0;
   position: absolute;
   right: 0.625em;
@@ -4631,55 +4635,55 @@ fieldset[disabled] .select select:hover {
   margin-right: -1px;
 }
 
-.field.has-addons .control:not(:first-child):not(:last-child) .button,
-.field.has-addons .control:not(:first-child):not(:last-child) .input,
-.field.has-addons .control:not(:first-child):not(:last-child) .select select {
+.field.has-addons .control:not(:first-child):not(:last-child) .bra-btn,
+.field.has-addons .control:not(:first-child):not(:last-child) .bra-input,
+.field.has-addons .control:not(:first-child):not(:last-child) .bra-select select {
   border-radius: 0;
 }
 
-.field.has-addons .control:first-child:not(:only-child) .button,
-.field.has-addons .control:first-child:not(:only-child) .input,
-.field.has-addons .control:first-child:not(:only-child) .select select {
+.field.has-addons .control:first-child:not(:only-child) .bra-btn,
+.field.has-addons .control:first-child:not(:only-child) .bra-input,
+.field.has-addons .control:first-child:not(:only-child) .bra-select select {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.field.has-addons .control:last-child:not(:only-child) .button,
-.field.has-addons .control:last-child:not(:only-child) .input,
-.field.has-addons .control:last-child:not(:only-child) .select select {
+.field.has-addons .control:last-child:not(:only-child) .bra-btn,
+.field.has-addons .control:last-child:not(:only-child) .bra-input,
+.field.has-addons .control:last-child:not(:only-child) .bra-select select {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.field.has-addons .control .button:not([disabled]):hover, .field.has-addons .control .button:not([disabled]).is-hovered,
-.field.has-addons .control .input:not([disabled]):hover,
-.field.has-addons .control .input:not([disabled]).is-hovered,
-.field.has-addons .control .select select:not([disabled]):hover,
-.field.has-addons .control .select select:not([disabled]).is-hovered {
+.field.has-addons .control .bra-btn:not([disabled]):hover, .field.has-addons .control .bra-btn:not([disabled]).is-hovered,
+.field.has-addons .control .bra-input:not([disabled]):hover,
+.field.has-addons .control .bra-input:not([disabled]).is-hovered,
+.field.has-addons .control .bra-select select:not([disabled]):hover,
+.field.has-addons .control .bra-select select:not([disabled]).is-hovered {
   z-index: 2;
 }
 
-.field.has-addons .control .button:not([disabled]):focus, .field.has-addons .control .button:not([disabled]).is-focused, .field.has-addons .control .button:not([disabled]):active, .field.has-addons .control .button:not([disabled]).is-active,
-.field.has-addons .control .input:not([disabled]):focus,
-.field.has-addons .control .input:not([disabled]).is-focused,
-.field.has-addons .control .input:not([disabled]):active,
-.field.has-addons .control .input:not([disabled]).is-active,
-.field.has-addons .control .select select:not([disabled]):focus,
-.field.has-addons .control .select select:not([disabled]).is-focused,
-.field.has-addons .control .select select:not([disabled]):active,
-.field.has-addons .control .select select:not([disabled]).is-active {
+.field.has-addons .control .bra-btn:not([disabled]):focus, .field.has-addons .control .bra-btn:not([disabled]).is-focused, .field.has-addons .control .bra-btn:not([disabled]):active, .field.has-addons .control .bra-btn:not([disabled]).is-active,
+.field.has-addons .control .bra-input:not([disabled]):focus,
+.field.has-addons .control .bra-input:not([disabled]).is-focused,
+.field.has-addons .control .bra-input:not([disabled]):active,
+.field.has-addons .control .bra-input:not([disabled]).is-active,
+.field.has-addons .control .bra-select select:not([disabled]):focus,
+.field.has-addons .control .bra-select select:not([disabled]).is-focused,
+.field.has-addons .control .bra-select select:not([disabled]):active,
+.field.has-addons .control .bra-select select:not([disabled]).is-active {
   z-index: 3;
 }
 
-.field.has-addons .control .button:not([disabled]):focus:hover, .field.has-addons .control .button:not([disabled]).is-focused:hover, .field.has-addons .control .button:not([disabled]):active:hover, .field.has-addons .control .button:not([disabled]).is-active:hover,
-.field.has-addons .control .input:not([disabled]):focus:hover,
-.field.has-addons .control .input:not([disabled]).is-focused:hover,
-.field.has-addons .control .input:not([disabled]):active:hover,
-.field.has-addons .control .input:not([disabled]).is-active:hover,
-.field.has-addons .control .select select:not([disabled]):focus:hover,
-.field.has-addons .control .select select:not([disabled]).is-focused:hover,
-.field.has-addons .control .select select:not([disabled]):active:hover,
-.field.has-addons .control .select select:not([disabled]).is-active:hover {
+.field.has-addons .control .bra-btn:not([disabled]):focus:hover, .field.has-addons .control .bra-btn:not([disabled]).is-focused:hover, .field.has-addons .control .bra-btn:not([disabled]):active:hover, .field.has-addons .control .bra-btn:not([disabled]).is-active:hover,
+.field.has-addons .control .bra-input:not([disabled]):focus:hover,
+.field.has-addons .control .bra-input:not([disabled]).is-focused:hover,
+.field.has-addons .control .bra-input:not([disabled]):active:hover,
+.field.has-addons .control .bra-input:not([disabled]).is-active:hover,
+.field.has-addons .control .bra-select select:not([disabled]):focus:hover,
+.field.has-addons .control .bra-select select:not([disabled]).is-focused:hover,
+.field.has-addons .control .bra-select select:not([disabled]):active:hover,
+.field.has-addons .control .bra-select select:not([disabled]).is-active:hover {
   z-index: 4;
 }
 
@@ -4804,9 +4808,9 @@ fieldset[disabled] .select select:hover {
   text-align: left;
 }
 
-.control.has-icons-left .input:focus ~ .icon,
-.control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon,
-.control.has-icons-right .select:focus ~ .icon {
+.control.has-icons-left .bra-input:focus ~ .icon,
+.control.has-icons-left .bra-select:focus ~ .icon, .control.has-icons-right .bra-input:focus ~ .icon,
+.control.has-icons-right .bra-select:focus ~ .icon {
   color: #4a4a4a;
 }
 
@@ -4820,8 +4824,8 @@ fieldset[disabled] .select select:hover {
   z-index: 4;
 }
 
-.control.has-icons-left .input,
-.control.has-icons-left .select select {
+.control.has-icons-left .bra-input,
+.control.has-icons-left .bra-select select {
   padding-left: 2.5em;
 }
 
@@ -4829,8 +4833,8 @@ fieldset[disabled] .select select:hover {
   left: 0;
 }
 
-.control.has-icons-right .input,
-.control.has-icons-right .select select {
+.control.has-icons-right .bra-input,
+.control.has-icons-right .bra-select select {
   padding-right: 2.5em;
 }
 
