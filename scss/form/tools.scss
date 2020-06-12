@@ -32,7 +32,7 @@ $help-size: $size-small !default;
 
 .field {
   &:not(:last-child) {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.75em;
   }
 
   // Modifiers
@@ -221,9 +221,8 @@ $help-size: $size-small !default;
 .control {
   box-sizing: border-box;
   clear: both;
-  font-size: $size-normal;
+  font-size: inherit;
   position: relative;
-  text-align: left;
 
   // Modifiers
   &.has-icons-left,
@@ -231,13 +230,13 @@ $help-size: $size-small !default;
     .bra-input,
     .bra-select {
       &:focus {
-        & ~ .icon {
+        & ~ .bra-icon {
           color: $input-icon-active-color;
         }
       }
     }
 
-    .icon {
+    .bra-icon {
       color: $input-icon-color;
       height: $input-height;
       pointer-events: none;
@@ -254,7 +253,7 @@ $help-size: $size-small !default;
       padding-left: $input-height;
     }
 
-    .icon.is-left {
+    .bra-icon.is-left {
       left: 0;
     }
   }
@@ -265,7 +264,7 @@ $help-size: $size-small !default;
       padding-right: $input-height;
     }
 
-    .icon.is-right {
+    .bra-icon.is-right {
       right: 0;
     }
   }

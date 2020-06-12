@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Template</title>
+    <link rel="stylesheet" href="../../css/bra.css">
+    <link rel="stylesheet" href='//at.alicdn.com/t/font_1849921_5qtb07mvc8i.css' />
+</head>
+<body>
+<div class="container">
+<div class="columns is-mobile is-vcentered" style="height: 100vh;">
+    <div class="column is-vcentered">
+        <div class="container " style="padding: 0px 30px;">
+            <div class="columns is-centered has-text-centered ">
+
+                <form class="bra-form column is-6 login-form is-box" style="padding:30px;max-width:425px">
+
+                    <h2 class="title has-text-weight-bold is-size-2" style="margin-bottom:35px"><span>Welcome Login</span></h2>
+                    <div class=" is-size-5">
+                        <div class="field">
+                            <div class="control has-icons-left">
+
+                                <input name="data[user_name]" type="text" placeholder="输入登录账号" value="" bra-verify="required" class="bra-input is-danger">
+
+                                <span class="bra-icon is-left"><i class="bra-user is-size-3  brafont"></i></span>
+
+                            </div>
+                            <p class="help is-success"></p>
+                        </div>
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input name="data[password]" type="text" placeholder="输入登录密码" value="" bra-verify="required" class="bra-input is-danger">
+
+                                <span class="bra-icon is-left"><i class="bra-pass is-size-3 brafont"></i></span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="columns is-marginless is-mobile is-vcentered is-gapless">
+                                <div class="column">
+
+
+                                    <div class="field">
+                                        <div class="control has-icons-left">
+                                    <input name="code" bra-verify="required" type="text" placeholder="输入登录验证码" class="bra-input is-danger">
+
+                                            <span class="bra-icon is-left"><i class="bra-safe is-size-3 brafont"></i></span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="column is-narrow"><img src="/bra/bra/yzm.html?i=0.5165060492216809" alt="captcha" class="code-img" style="height: 2.5em; margin-left: 10px; display: flex; width: 131px;"></div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="columns is-mobile is-gapless">
+                                <div class="column is-half"><button type="button" class="bra-btn is-block is-primary is-radiusless">登录</button></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-login is-relative">
+                        <div class="subtitle is-link is-margin m-a is-padding p-a">其他登陆方式</div>
+
+                        <div class="columns is-mobile">
+                            <div class="column is-narrow">
+                                <div class="icon-box">
+                                    <span class="is-info brafont bra-qq is-rounded"></span>
+                                </div>
+                            </div>
+
+                            <div class="column is-narrow">
+                                <div class="icon-box">
+                                    <span class="is-success brafont bra-wechat is-rounded"></span>
+                                </div>
+                            </div>
+
+                            <div  class="column">
+                            </div>
+                            <div  class="is-narrow column">
+                                <a class="bra-btn is-text" href="/bra/passport/reg.html" >注册账号</a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

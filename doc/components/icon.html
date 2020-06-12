@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表演示</title>
+    <link rel="stylesheet" href="../../css/bra.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1849921_dsdyqfrb79.css">
+    <script src="/node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="bra_app">
+
+    <div class="container">
+
+        <i class="brafont is-size-1 bra-computer"></i>
+        <i class="brafont is-size-2 bra-computer"></i>
+        <i class="brafont is-size-3 bra-computer"></i>
+        <i class="brafont is-size-4 bra-computer"></i>
+        <i class="brafont is-size-5 bra-computer"></i>
+        <i class="brafont is-size-6 bra-computer"></i>
+        <i class="brafont is-size-7 bra-computer"></i>
+        <i class="brafont is-size-8 bra-computer"></i>
+
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3 has-text-centered">
+                <div class="icon-box">
+                    <i class="brafont  is-info is-rounded bra-vip"></i>
+                </div>
+                <div class="icon-text is-margin m-t">会员中心</div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+                <div class="icon-box">
+                    <i class="brafont  is-success is-rounded bra-op-rate"></i>
+                </div>
+                <div class="icon-text is-margin m-t">我的评价</div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+                <div class="icon-box">
+                    <i class="brafont  is-danger is-rounded bra-computer"></i>
+                </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+                <div class="icon-box">
+                    <i class="brafont  is-info is-rounded bra-computer"></i>
+                </div>
+            </div>
+            <div class="column is-3 has-text-centered">
+                <div class="icon-box">
+                    <i class="brafont  is-primary bra-computer"></i>
+                </div>
+
+                你好
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    new Vue({
+        el: "#bra_app",
+        data: {
+            tab: 'bra-cells',
+            items: [1, 2, 3, 4, 5, 6, 7, 8]
+        },
+
+    });
+</script>
+</body>
+</html>
