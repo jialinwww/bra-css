@@ -1,6 +1,10 @@
-$icon-dimensions: 2.8rem !default;
+$icon-dimensions: 2.75rem !default;
 $icon-size: 1.8rem !default;
-$icon-text-line-height: 2.8rem !default;
+$icon-text-line-height: 2.75rem !default;
+.bra-icon{
+  line-height: 2.5em;
+  text-align:center;
+}
 .brafont {
   align-items: center;
   display: inline-flex;
