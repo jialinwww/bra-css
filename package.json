@@ -1,6 +1,6 @@
 {
   "name": "bra-css",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://www.braui.org",
   "author": {
     "name": "jialin",
@@ -49,6 +49,7 @@
     "README.md"
   ],
   "dependencies": {
-
+    "animate.css": "^4.1.0",
+    "vue": "^2.6.11"
   }
 }
