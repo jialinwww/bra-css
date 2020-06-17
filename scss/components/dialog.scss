@@ -1,0 +1,140 @@
+$dialog-background-color: $background !default;
+$dialog-radius: $no-radius !default;
+
+$dialog-header-background-color: $text !default;
+$dialog-header-color: $text-invert !default;
+$dialog-header-weight: $weight-bold !default;
+$dialog-header-padding: 0.75em 1em !default;
+$dialog-header-radius: $dialog-radius !default;
+
+$dialog-body-border-color: $border !default;
+$dialog-body-border-width: 0 0 0 4px !default;
+$dialog-body-color: $text !default;
+$dialog-body-padding: 1.25em 1.5em !default;
+$dialog-body-radius: $dialog-radius !default;
+
+$dialog-body-pre-background-color: $scheme-main !default;
+$dialog-body-pre-code-background-color: transparent !default;
+
+$dialog-header-body-border-width: 0 !default;
+$dialog-colors: $colors !default;
+
+$modal-background-background-color: bulmaRgba($scheme-invert, 0.6) !default
+
+.bra-dialog {
+  @extend %block;
+
+  background-color: $dialog-background-color;
+  border-radius: $dialog-radius;
+  font-size: $size-normal;
+  position:relative;
+
+  strong {
+    color: currentColor;
+  }
+
+  a:not(.button):not(.tag):not(.dropdown-item) {
+    color: currentColor;
+    text-decoration: underline;
+  }
+
+  // Colors
+  @each $name, $components in $dialog-colors {
+    $color: nth($components, 1);
+    $color-invert: nth($components, 2);
+    $color-light: null;
+    $color-dark: null;
+
+    @if length($components) >= 3 {
+      $color-light: nth($components, 3);
+
+      @if length($components) >= 4 {
+        $color-dark: nth($components, 4);
+      }
+      @else {
+        $color-luminance: colorLuminance($color);
+        $darken-percentage: $color-luminance * 70%;
+        $desaturate-percentage: $color-luminance * 30%;
+        $color-dark: desaturate(darken($color, $darken-percentage), $desaturate-percentage);
+      }
+    }
+    @else {
+      $color-lightning: max(100% - lightness($color) - 2%, 0%);
+      $color-light: lighten($color, $color-lightning);
+    }
+
+    &.is-#{$name} {
+      background-color: $color-light;
+
+      .bra-dialog-header {
+        background-color: $color;
+        color: $color-invert;
+      }
+
+      .blockquote {
+        border-color: $color;
+        color: $color-dark;
+      }
+    }
+  }
+}
+
+.bra-dialog-header {
+  align-items: center;
+  background-color: $dialog-header-background-color;
+  border-radius: $dialog-header-radius $dialog-header-radius 0 0;
+  color: $dialog-header-color;
+  display: flex;
+  font-weight: $dialog-header-weight;
+  justify-content: space-between;
+  line-height: 1.25;
+  padding: $dialog-header-padding;
+  position: relative;
+
+  .bra-del {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    @include ltr-property("margin", 0.75em, false);
+  }
+
+  & + .blockquote {
+    border-width: $dialog-header-body-border-width;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+
+}
+
+.blockquote {
+  position:relative;
+  border-color: $dialog-body-border-color;
+  border-radius: $dialog-body-radius;
+  border-style: solid;
+  border-width: $dialog-body-border-width;
+  color: $dialog-body-color;
+  padding: $dialog-body-padding;
+
+  code,
+  pre {
+    background-color: $dialog-body-pre-background-color;
+  }
+
+  pre code {
+    background-color: $dialog-body-pre-code-background-color;
+  }
+}
+.is-active .blockquote{
+  z-index:$level_dialog_content;
+}
+
+.bra-mask{
+  @extend %overlay;
+  background-color: $modal-background-background-color;
+
+  width: 100vw;
+  position: fixed;
+  z-index: $level_dialog_bg;
+  height: 100vh;
+}
