@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>对话框</title>
+    <link rel="stylesheet" href="../../css/bra.css">
+    <link rel="stylesheet" href="../../node_modules/animate.css/animate.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_1849921_5qtb07mvc8i.css">
+    <script src="/node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="bra-app">
+
+    <div class="container is-padding p-a">
+        <div class="bra-btns">
+            <div class="bra-btn" @click="show_dialog_1 = !show_dialog_1">
+                弹出对话框1
+            </div>
+
+            <div class="bra-btn" @click="show_dialog_2 = !show_dialog_2">
+                无标题信息
+            </div>
+
+            <div class="bra-btn" @click="show_dialog_3 = !show_dialog_3">
+                无标题信息 3
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 普通消息 -->
+        <div class="is-dialog" v-show="show_dialog_1">
+            <div class="bra-dialog">
+                <div class="bra-dialog-header">
+                    <p>Hello World</p>
+                    <button class="bra-del" aria-label="delete" @click="show_dialog_1 = false"></button>
+                </div>
+                <div class="blockquote">
+                    你好 , 消息框!
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 普通消息 -->
+        <div class="is-dialog" v-show="show_dialog_2">
+            <div class="bra-dialog is-info">
+                <div class="blockquote">
+                    <button class="bra-del is-pulled-right" aria-label="delete" @click="show_dialog_2 = false"></button>
+                    你好 , 消息框!
+                </div>
+            </div>
+        </div>
+
+        <!-- center -->
+        <div class="is-dialog has-text-centered animate__animated animate__fadeIn" :class="{'is-active' : show_dialog_3 == true}" v-show="show_dialog_3">
+            <div class="bra-mask columns is-gapless is-vcentered is-centered" >
+
+                <div class="bra-mask" @click="show_dialog_3 = !show_dialog_3"></div>
+
+                    <div class="column is-narrow">
+                        <div class="blockquote is-danger is-inline" v-show="show_dialog_3">
+                            你好 , 消息框 , 特简单!
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    new Vue({
+        el : "#bra-app" ,
+        data : {
+            show_dialog_1 : true , // 普通
+            show_dialog_2 : false ,
+            show_dialog_3 : false
+        } ,
+
+    });
+</script>
+</body>
+</html>
