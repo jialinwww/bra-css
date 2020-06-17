@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>表单</title>
+	<link rel="stylesheet" href="../../css/bra.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1849921_5qtb07mvc8i.css">
+	<style>
+	</style>
+</head>
+<body>
+<div class="container is-margin m-a is-padding p-a">
+	<p class="blockquote">表单使用 .bra-form</p>
+	<form action="" class="bra-form">
+        <div class="field">
+            <div class="control has-icons-left">
+                <input name="data[user_name]" type="text" placeholder="输入登录账号" value="" bra-verify="required" class="bra-input">
+                <span class="bra-icon is-left">
+                    <i class="bra-user is-size-4 brafont"></i>
+                </span>
+            </div>
+        </div>
+		<div class="field">
+			<label class="label">表单标题</label>
+			<div class="control">
+				<input class="bra-input" type="text" placeholder=".bra-input ">
+			</div>
+		</div>
+
+		<div class="field is-grouped">
+			<div class="control">
+				<input class="bra-input" type="text" placeholder=".bra-input 水平 is-grouped">
+			</div>
+
+			<div class="control">
+				<input class="bra-input" type="text" placeholder=".bra-input 水平 is-grouped">
+			</div>
+
+
+			<div class="field has-addons">
+				<p class="control">
+					<input class="bra-input" type="text" placeholder="is-grouped">
+				</p>
+				<p class="control">
+					<a class="bra-btn is-static">
+						@qq.com
+					</a>
+				</p>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="field has-addons">
+			<p class="control">
+				<input class="bra-input" type="text" placeholder="Your email">
+			</p>
+			<p class="control">
+				<a class="bra-btn is-static">
+					@qq.com
+				</a>
+			</p>
+		</div>
+
+
+
+		<div class="field has-addons">
+
+			<p class="control">
+				<a class="bra-btn is-static">
+					总价格
+				</a>
+			</p>
+			<p class="control is-expanded">
+				<input class="bra-input" type="text" placeholder="总价格 is-expanded">
+			</p>
+			<p class="control">
+				<a class="bra-btn is-static">
+					CNY
+				</a>
+			</p>
+		</div>
+
+
+
+		<div class="field">
+			<label class="label">下拉选择</label>
+			<div class="control">
+				<div class="bra-select is-success">
+					<select>
+						<option>请选择</option>
+						<option>布拉CSS</option>
+						<option>布拉JS</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field is-grouped">
+			<div class="control">
+				<button class="bra-btn is-link" type="submit">Submit</button>
+			</div>
+			<div class="control">
+				<button class="bra-btn is-link is-light" type="reset">重置</button>
+			</div>
+		</div>
+	</form>
+
+
+
+</div>
+
+<div class="container is-margin m-a is-padding p-a">
+	<p class="blockquote">加载中的表单 .bra-form .is-loading</p>
+	<form action="" class="bra-form is-loading">
+
+		<div class="field">
+			<label class="label">表单标题</label>
+			<div class="control">
+				<input class="bra-input" type="text" placeholder=".bra-input ">
+			</div>
+		</div>
+
+		<div class="field">
+			<label class="label">下拉选择</label>
+			<div class="control">
+				<div class="bra-select is-success">
+					<select>
+						<option>请选择</option>
+						<option>布拉CSS</option>
+						<option>布拉JS</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="field is-grouped">
+			<div class="control">
+				<button class="bra-btn is-link" type="submit">Submit</button>
+			</div>
+			<div class="control">
+				<button class="bra-btn is-link is-light" type="reset">重置</button>
+			</div>
+		</div>
+	</form>
+
+
+
+</div>
+
+</body>
+</html>
