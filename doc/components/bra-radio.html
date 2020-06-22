@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单选按钮</title>
+	<link rel="stylesheet" href="../../css/bra.css">
+</head>
+<body>
+<div  class="container">
+    <p class="blockquote">原生的单选按钮</p>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="rsvp" checked>
+            默认选择了
+        </label>
+        <label class="radio">
+            <input type="radio" name="rsvp">
+            未选中的
+        </label>
+        <label class="radio" disabled>
+            <input type="radio" name="rsvp" disabled>
+            禁用了的
+        </label>
+    </div>
+
+    <p class="blockquote">bra-radio 单选按钮</p>
+    <form action="#">
+
+        <div class="control">
+            <label class="bra-radio">
+                <input type="radio" name="rsvp" checked>
+                <span>默认选择了</span>
+            </label>
+            <label class="bra-radio">
+                <input type="radio" name="rsvp">
+                <span>未选中的</span>
+
+            </label>
+            <label class="bra-radio" disabled>
+                <input type="radio" name="rsvp" disabled>
+                <span>禁用了的</span>
+            </label>
+        </div>
+
+        <div class="control">
+            <label class="bra-radio is-info">
+                <input type="radio" class="with-gap" name="info" checked>
+                <span>模仿原生</span>
+            </label>
+            <label class="bra-radio is-danger">
+                <input type="radio" name="danger" checked>
+                <span>默认选择了</span>
+
+            </label>
+            <label class="bra-radio is-orange" >
+                <input type="radio" name="orange" checked>
+                <span>默认选择了</span>
+            </label>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
