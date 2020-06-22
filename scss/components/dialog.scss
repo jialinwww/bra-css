@@ -33,11 +33,6 @@ $modal-background-background-color: bulmaRgba($scheme-invert, 0.6) !default
     color: currentColor;
   }
 
-  a:not(.button):not(.tag):not(.dropdown-item) {
-    color: currentColor;
-    text-decoration: underline;
-  }
-
   // Colors
   @each $name, $components in $dialog-colors {
     $color: nth($components, 1);
