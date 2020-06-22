@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡组件</title>
+
+    <link rel="stylesheet" href="../../css/bra.css">
+    <script src="/node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="columns">
+        <div class="column">
+
+            <div id="bra_app">
+
+                <div class="is-box  is-margin m-a">
+                    <div class="bra-tabs is-centered is-boxed">
+
+                        <ul>
+                            <li class="bra-tab" :class="{'is-active' : tab == 'bra-cells'}" @click="tab = 'bra-cells'">
+                                <a>bra-cells</a>
+                            </li>
+
+                            <li class="bra-tab" :class="{'is-active' : tab == 'bra-cells-pic'}" @click="tab = 'bra-cells-pic'">
+                                <a>bra-cells-pic</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="bra-tabs-body" style="background:#fff">
+                        <!-- bra-cells -->
+                        <div class="bra-cells" v-if="tab=='bra-cells'">
+                            <a v-for="item in items" class="bra-cell  bra-cell_access" href="javascript:">
+                                <div class="bra-cell__bd">
+                                    <p>cell standard</p>
+                                </div>
+                                <div class="bra-cell__ft">说明文字</div>
+                            </a>
+                        </div>
+
+                        <!-- bra-pic list -->
+
+                        <div class="bra-cells" v-if="tab=='bra-cells-pic'">
+
+                            <a v-for="item in items" class="bra-cell  bra-cell_access" href="javascript:">
+                                <div class="bra-cell__hd">
+                                    <div class="image is-64x64" style=" margin-right: 16px;">
+                                        <img class="has-ratio"
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="bra-cell__bd">
+                                    <p class="title">阳光财险-车主贷</p>
+                                    <div class="columns is-mobile is-gapless">
+                                        <div class="column " style="width: 75%;">
+                                            <span class="dt-info is-size-8 has-text-grey">275人咨询 / 2 天放款</span></div>
+                                        <div class="column is-narrow has-text-grey">
+                                            <span class="profit">22.80%</span><span class="dt-info"> / 年</span>
+                                        </div>
+                                    </div>
+                                    <div class="columns is-mobile is-gapless ">
+                                        <div class="column">
+                                            <div class="bra-tags is-size-8">
+                                                <span class="bra-tag is-success">无抵押</span>
+                                                <span class="bra-tag is-danger">放款快</span>
+                                            </div>
+                                        </div> <!---->
+                                        <div doc="right" class="column is-narrow grid-item-money">
+                                            <span class="dt-info is-size-8  has-text-info">可贷 2~20 万 分期还款</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: "#bra_app",
+        data: {
+            tab: 'bra-cells',
+            items: [1, 2, 3, 4, 5, 6, 7, 8]
+        },
+    });
+</script>
+</body>
+</html>
