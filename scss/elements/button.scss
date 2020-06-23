@@ -344,8 +344,6 @@ $button-static-border-color: $border !default;
     }
   }
 
-
-
   &:not(:last-child) {
     margin-bottom: 0.75rem;
   }
@@ -410,7 +408,14 @@ $button-static-border-color: $border !default;
       .bra-btn:not(.is-fullwidth) {
         margin-left: 0.25rem;
         margin-right: 0.25rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+
       }
     }
+
   }
 }

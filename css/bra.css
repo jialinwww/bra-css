@@ -3255,6 +3255,10 @@ fieldset[disabled] .bra-btn {
   margin-right: 0.25rem;
 }
 
+.bra-btns.is-right:not(.has-addons) .bra-btn:not(.is-fullwidth):last-child {
+  margin-right: 0;
+}
+
 .container {
   flex-grow: 1;
   margin: 0 auto;
@@ -7957,7 +7961,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   background-color: transparent;
 }
 
-.is-active .blockquote {
+.is-active .bra-dialog {
   z-index: 6000;
 }
 
