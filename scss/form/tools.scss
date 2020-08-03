@@ -230,9 +230,7 @@ $help-size: $size-small !default;
     .bra-input,
     .bra-select {
       &:focus {
-        & ~ .bra-icon {
-          color: $input-icon-active-color;
-        }
+        color: $input-icon-active-color;
       }
     }
 

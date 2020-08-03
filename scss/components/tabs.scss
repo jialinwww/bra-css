@@ -41,7 +41,7 @@ $tabs-toggle-link-active-color: $link-invert !default;
   overflow-x: auto;
   white-space: nowrap;
 
-  a {
+  a.a {
     align-items: center;
     border-bottom-color: $tabs-border-bottom-color;
     border-bottom-style: $tabs-border-bottom-style;
@@ -59,18 +59,18 @@ $tabs-toggle-link-active-color: $link-invert !default;
     }
   }
 
-  li {
+  li ,.bra-tab {
     display: block;
 
     &.is-active {
-      a {
+      a,.a {
         border-bottom-color: $tabs-link-active-border-bottom-color;
         color: $tabs-link-active-color;
       }
     }
   }
 
-  ul {
+  ul ,.bra-tab-ul {
     align-items: center;
     border-bottom-color: $tabs-border-bottom-color;
     border-bottom-style: $tabs-border-bottom-style;
@@ -122,7 +122,7 @@ $tabs-toggle-link-active-color: $link-invert !default;
 
   // Styles
   &.is-boxed {
-    a {
+    a,.a {
       border: 1px solid transparent;
 
       &:hover {
@@ -131,9 +131,9 @@ $tabs-toggle-link-active-color: $link-invert !default;
       }
     }
 
-    li {
+    li,.bra-tab {
       &.is-active {
-        a {
+        a,.a {
           background-color: $tabs-boxed-link-active-background-color;
           border-color: $tabs-boxed-link-active-border-color;
           border-bottom-color: $tabs-boxed-link-active-border-bottom-color !important;
@@ -150,7 +150,7 @@ $tabs-toggle-link-active-color: $link-invert !default;
   }
 
   &.is-toggle {
-    a {
+    a,.a {
       border-color: $tabs-toggle-link-border-color;
       border-style: $tabs-toggle-link-border-style;
       border-width: $tabs-toggle-link-border-width;
@@ -164,23 +164,23 @@ $tabs-toggle-link-active-color: $link-invert !default;
       }
     }
 
-    li {
-      & + li {
+    li,.bra-tab {
+      & + li,.bra-tab {
         margin-left: -#{$tabs-toggle-link-border-width};
       }
 
-      &:first-child a {
+      &:first-child a,.a {
         border-top-left-radius: $tabs-toggle-link-radius;
         border-bottom-left-radius: $tabs-toggle-link-radius;
       }
 
-      &:last-child a {
+      &:last-child a,.a {
         border-bottom-right-radius: $tabs-toggle-link-radius;
         border-top-right-radius: $tabs-toggle-link-radius;
       }
 
       &.is-active {
-        a {
+        a,.a {
           background-color: $tabs-toggle-link-active-background-color;
           border-color: $tabs-toggle-link-active-border-color;
           color: $tabs-toggle-link-active-color;
@@ -189,19 +189,19 @@ $tabs-toggle-link-active-color: $link-invert !default;
       }
     }
 
-    ul {
+    ul,.bra-tab-ul {
       border-bottom: none;
     }
 
     &.is-toggle-rounded {
       li {
-        &:first-child a {
+        &:first-child a,.a {
           border-bottom-left-radius: $radius-rounded;
           border-top-left-radius: $radius-rounded;
           padding-left: 1.25em;
         }
 
-        &:last-child a {
+        &:last-child a,.a {
           border-bottom-right-radius: $radius-rounded;
           border-top-right-radius: $radius-rounded;
           padding-right: 1.25em;

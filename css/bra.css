@@ -138,22 +138,22 @@
   width: 1em;
 }
 
-.is-overlay, .bra-img.is-square img,
-.bra-img.is-square .has-ratio, .bra-img.is-1by1 img,
-.bra-img.is-1by1 .has-ratio, .bra-img.is-5by4 img,
-.bra-img.is-5by4 .has-ratio, .bra-img.is-4by3 img,
-.bra-img.is-4by3 .has-ratio, .bra-img.is-3by2 img,
-.bra-img.is-3by2 .has-ratio, .bra-img.is-5by3 img,
-.bra-img.is-5by3 .has-ratio, .bra-img.is-16by9 img,
-.bra-img.is-16by9 .has-ratio, .bra-img.is-2by1 img,
-.bra-img.is-2by1 .has-ratio, .bra-img.is-3by1 img,
-.bra-img.is-3by1 .has-ratio, .bra-img.is-4by5 img,
-.bra-img.is-4by5 .has-ratio, .bra-img.is-3by4 img,
-.bra-img.is-3by4 .has-ratio, .bra-img.is-2by3 img,
-.bra-img.is-2by3 .has-ratio, .bra-img.is-3by5 img,
-.bra-img.is-3by5 .has-ratio, .bra-img.is-9by16 img,
-.bra-img.is-9by16 .has-ratio, .bra-img.is-1by2 img,
-.bra-img.is-1by2 .has-ratio, .bra-img.is-1by3 img,
+.is-overlay, .bra-img.is-square .img,
+.bra-img.is-square .has-ratio, .bra-img.is-1by1 .img,
+.bra-img.is-1by1 .has-ratio, .bra-img.is-5by4 .img,
+.bra-img.is-5by4 .has-ratio, .bra-img.is-4by3 .img,
+.bra-img.is-4by3 .has-ratio, .bra-img.is-3by2 .img,
+.bra-img.is-3by2 .has-ratio, .bra-img.is-5by3 .img,
+.bra-img.is-5by3 .has-ratio, .bra-img.is-16by9 .img,
+.bra-img.is-16by9 .has-ratio, .bra-img.is-2by1 .img,
+.bra-img.is-2by1 .has-ratio, .bra-img.is-3by1 .img,
+.bra-img.is-3by1 .has-ratio, .bra-img.is-4by5 .img,
+.bra-img.is-4by5 .has-ratio, .bra-img.is-3by4 .img,
+.bra-img.is-3by4 .has-ratio, .bra-img.is-2by3 .img,
+.bra-img.is-2by3 .has-ratio, .bra-img.is-3by5 .img,
+.bra-img.is-3by5 .has-ratio, .bra-img.is-9by16 .img,
+.bra-img.is-9by16 .has-ratio, .bra-img.is-1by2 .img,
+.bra-img.is-1by2 .has-ratio, .bra-img.is-1by3 .img,
 .bra-img.is-1by3 .has-ratio, .bra-mask {
   bottom: 0;
   left: 0;
@@ -3308,40 +3308,32 @@ fieldset[disabled] .bra-btn {
   position: relative;
 }
 
-.bra-img img {
+.bra-img .img {
   display: block;
   height: auto;
   width: 100%;
-}
-
-.bra-img img.is-rounded {
-  border-radius: 290486px;
-}
-
-.bra-img img.is-radius {
-  border-radius: 4px;
 }
 
 .bra-img.is-fullwidth {
   width: 100%;
 }
 
-.bra-img.is-square img,
-.bra-img.is-square .has-ratio, .bra-img.is-1by1 img,
-.bra-img.is-1by1 .has-ratio, .bra-img.is-5by4 img,
-.bra-img.is-5by4 .has-ratio, .bra-img.is-4by3 img,
-.bra-img.is-4by3 .has-ratio, .bra-img.is-3by2 img,
-.bra-img.is-3by2 .has-ratio, .bra-img.is-5by3 img,
-.bra-img.is-5by3 .has-ratio, .bra-img.is-16by9 img,
-.bra-img.is-16by9 .has-ratio, .bra-img.is-2by1 img,
-.bra-img.is-2by1 .has-ratio, .bra-img.is-3by1 img,
-.bra-img.is-3by1 .has-ratio, .bra-img.is-4by5 img,
-.bra-img.is-4by5 .has-ratio, .bra-img.is-3by4 img,
-.bra-img.is-3by4 .has-ratio, .bra-img.is-2by3 img,
-.bra-img.is-2by3 .has-ratio, .bra-img.is-3by5 img,
-.bra-img.is-3by5 .has-ratio, .bra-img.is-9by16 img,
-.bra-img.is-9by16 .has-ratio, .bra-img.is-1by2 img,
-.bra-img.is-1by2 .has-ratio, .bra-img.is-1by3 img,
+.bra-img.is-square .img,
+.bra-img.is-square .has-ratio, .bra-img.is-1by1 .img,
+.bra-img.is-1by1 .has-ratio, .bra-img.is-5by4 .img,
+.bra-img.is-5by4 .has-ratio, .bra-img.is-4by3 .img,
+.bra-img.is-4by3 .has-ratio, .bra-img.is-3by2 .img,
+.bra-img.is-3by2 .has-ratio, .bra-img.is-5by3 .img,
+.bra-img.is-5by3 .has-ratio, .bra-img.is-16by9 .img,
+.bra-img.is-16by9 .has-ratio, .bra-img.is-2by1 .img,
+.bra-img.is-2by1 .has-ratio, .bra-img.is-3by1 .img,
+.bra-img.is-3by1 .has-ratio, .bra-img.is-4by5 .img,
+.bra-img.is-4by5 .has-ratio, .bra-img.is-3by4 .img,
+.bra-img.is-3by4 .has-ratio, .bra-img.is-2by3 .img,
+.bra-img.is-2by3 .has-ratio, .bra-img.is-3by5 .img,
+.bra-img.is-3by5 .has-ratio, .bra-img.is-9by16 .img,
+.bra-img.is-9by16 .has-ratio, .bra-img.is-1by2 .img,
+.bra-img.is-1by2 .has-ratio, .bra-img.is-1by3 .img,
 .bra-img.is-1by3 .has-ratio {
   height: 100%;
   width: 100%;
@@ -6231,9 +6223,9 @@ fieldset[disabled] .bra-select select:hover {
   position: relative;
 }
 
-.control.has-icons-left .bra-input:focus ~ .bra-icon,
-.control.has-icons-left .bra-select:focus ~ .bra-icon, .control.has-icons-right .bra-input:focus ~ .bra-icon,
-.control.has-icons-right .bra-select:focus ~ .bra-icon {
+.control.has-icons-left .bra-input:focus,
+.control.has-icons-left .bra-select:focus, .control.has-icons-right .bra-input:focus,
+.control.has-icons-right .bra-select:focus {
   color: #4a4a4a;
 }
 
@@ -6363,7 +6355,7 @@ fieldset[disabled] .bra-select select:hover {
   white-space: nowrap;
 }
 
-.bra-tabs a {
+.bra-tabs a.a {
   align-items: center;
   border-bottom-color: #dbdbdb;
   border-bottom-style: solid;
@@ -6376,21 +6368,21 @@ fieldset[disabled] .bra-select select:hover {
   vertical-align: top;
 }
 
-.bra-tabs a:hover {
+.bra-tabs a.a:hover {
   border-bottom-color: #363636;
   color: #363636;
 }
 
-.bra-tabs li {
+.bra-tabs li, .bra-tabs .bra-tab {
   display: block;
 }
 
-.bra-tabs li.is-active a {
+.bra-tabs li.is-active a, .bra-tabs li.is-active .a, .bra-tabs .bra-tab.is-active a, .bra-tabs .bra-tab.is-active .a {
   border-bottom-color: #3273dc;
   color: #3273dc;
 }
 
-.bra-tabs ul {
+.bra-tabs ul, .bra-tabs .bra-tab-ul {
   align-items: center;
   border-bottom-color: #dbdbdb;
   border-bottom-style: solid;
@@ -6401,18 +6393,18 @@ fieldset[disabled] .bra-select select:hover {
   justify-content: flex-start;
 }
 
-.bra-tabs ul.is-left {
+.bra-tabs ul.is-left, .bra-tabs .bra-tab-ul.is-left {
   padding-right: 0.75em;
 }
 
-.bra-tabs ul.is-center {
+.bra-tabs ul.is-center, .bra-tabs .bra-tab-ul.is-center {
   flex: none;
   justify-content: center;
   padding-left: 0.75em;
   padding-right: 0.75em;
 }
 
-.bra-tabs ul.is-right {
+.bra-tabs ul.is-right, .bra-tabs .bra-tab-ul.is-right {
   justify-content: flex-end;
   padding-left: 0.75em;
 }
@@ -6433,16 +6425,16 @@ fieldset[disabled] .bra-select select:hover {
   justify-content: flex-end;
 }
 
-.bra-tabs.is-boxed a {
+.bra-tabs.is-boxed a, .bra-tabs.is-boxed .a {
   border: 1px solid transparent;
 }
 
-.bra-tabs.is-boxed a:hover {
+.bra-tabs.is-boxed a:hover, .bra-tabs.is-boxed .a:hover {
   background-color: whitesmoke;
   border-bottom-color: #dbdbdb;
 }
 
-.bra-tabs.is-boxed li.is-active a {
+.bra-tabs.is-boxed li.is-active a, .bra-tabs.is-boxed li.is-active .a, .bra-tabs.is-boxed .bra-tab.is-active a, .bra-tabs.is-boxed .bra-tab.is-active .a {
   background-color: white;
   border-color: #dbdbdb;
   border-bottom-color: transparent !important;
@@ -6453,7 +6445,7 @@ fieldset[disabled] .bra-select select:hover {
   flex-shrink: 0;
 }
 
-.bra-tabs.is-toggle a {
+.bra-tabs.is-toggle a, .bra-tabs.is-toggle .a {
   border-color: #dbdbdb;
   border-style: solid;
   border-width: 1px;
@@ -6461,44 +6453,44 @@ fieldset[disabled] .bra-select select:hover {
   position: relative;
 }
 
-.bra-tabs.is-toggle a:hover {
+.bra-tabs.is-toggle a:hover, .bra-tabs.is-toggle .a:hover {
   background-color: whitesmoke;
   border-color: #b5b5b5;
   z-index: 2;
 }
 
-.bra-tabs.is-toggle li + li {
+.bra-tabs.is-toggle li + li, .bra-tabs.is-toggle li .bra-tab, .bra-tabs.is-toggle .bra-tab + li, .bra-tabs.is-toggle .bra-tab .bra-tab {
   margin-left: -1px;
 }
 
-.bra-tabs.is-toggle li:first-child a {
+.bra-tabs.is-toggle li:first-child a, .bra-tabs.is-toggle li .a, .bra-tabs.is-toggle .bra-tab:first-child a, .bra-tabs.is-toggle .bra-tab .a {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.bra-tabs.is-toggle li:last-child a {
+.bra-tabs.is-toggle li:last-child a, .bra-tabs.is-toggle li .a, .bra-tabs.is-toggle .bra-tab:last-child a, .bra-tabs.is-toggle .bra-tab .a {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-.bra-tabs.is-toggle li.is-active a {
+.bra-tabs.is-toggle li.is-active a, .bra-tabs.is-toggle li.is-active .a, .bra-tabs.is-toggle .bra-tab.is-active a, .bra-tabs.is-toggle .bra-tab.is-active .a {
   background-color: #3273dc;
   border-color: #3273dc;
   color: #fff;
   z-index: 1;
 }
 
-.bra-tabs.is-toggle ul {
+.bra-tabs.is-toggle ul, .bra-tabs.is-toggle .bra-tab-ul {
   border-bottom: none;
 }
 
-.bra-tabs.is-toggle.is-toggle-rounded li:first-child a {
+.bra-tabs.is-toggle.is-toggle-rounded li:first-child a, .bra-tabs.is-toggle.is-toggle-rounded li .a {
   border-bottom-left-radius: 290486px;
   border-top-left-radius: 290486px;
   padding-left: 1.25em;
 }
 
-.bra-tabs.is-toggle.is-toggle-rounded li:last-child a {
+.bra-tabs.is-toggle.is-toggle-rounded li:last-child a, .bra-tabs.is-toggle.is-toggle-rounded li .a {
   border-bottom-right-radius: 290486px;
   border-top-right-radius: 290486px;
   padding-right: 1.25em;
