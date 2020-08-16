@@ -516,6 +516,21 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
     bottom:0;
   }
 }
+.is-cover{
+  display:block;
+  width:100%!important;
+  height:100%!important;;
+}
+.is-full-width{width:100%;}
+.is-full-height{height:100%}
+
+
+.z-100{z-index:100!important;}
+.z-200{z-index:200!important;}
+.z-300{z-index:300!important;}
+.z-400{z-index:400!important;}
+.z-500{z-index:500!important;}
+
 
 $box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02) !default
 

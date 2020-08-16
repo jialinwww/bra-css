@@ -6417,11 +6417,11 @@ fieldset[disabled] .bra-select select:hover {
   margin-left: 0.5em;
 }
 
-.bra-tabs.is-centered ul {
+.bra-tabs.is-centered .bra-tab-ul {
   justify-content: center;
 }
 
-.bra-tabs.is-right ul {
+.bra-tabs.is-right .bra-tab-ul {
   justify-content: flex-end;
 }
 
@@ -6440,7 +6440,7 @@ fieldset[disabled] .bra-select select:hover {
   border-bottom-color: transparent !important;
 }
 
-.bra-tabs.is-fullwidth li {
+.bra-tabs.is-fullwidth li, .bra-tabs.is-fullwidth .bra-tab {
   flex-grow: 1;
   flex-shrink: 0;
 }
@@ -6484,13 +6484,13 @@ fieldset[disabled] .bra-select select:hover {
   border-bottom: none;
 }
 
-.bra-tabs.is-toggle.is-toggle-rounded li:first-child a, .bra-tabs.is-toggle.is-toggle-rounded li .a {
+.bra-tabs.is-toggle.is-toggle-rounded li:first-child a, .bra-tabs.is-toggle.is-toggle-rounded li .a, .bra-tabs.is-toggle.is-toggle-rounded .bra-tab:first-child a, .bra-tabs.is-toggle.is-toggle-rounded .bra-tab .a {
   border-bottom-left-radius: 290486px;
   border-top-left-radius: 290486px;
   padding-left: 1.25em;
 }
 
-.bra-tabs.is-toggle.is-toggle-rounded li:last-child a, .bra-tabs.is-toggle.is-toggle-rounded li .a {
+.bra-tabs.is-toggle.is-toggle-rounded li:last-child a, .bra-tabs.is-toggle.is-toggle-rounded li .a, .bra-tabs.is-toggle.is-toggle-rounded .bra-tab:last-child a, .bra-tabs.is-toggle.is-toggle-rounded .bra-tab .a {
   border-bottom-right-radius: 290486px;
   border-top-right-radius: 290486px;
   padding-right: 1.25em;

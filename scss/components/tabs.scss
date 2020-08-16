@@ -41,7 +41,7 @@ $tabs-toggle-link-active-color: $link-invert !default;
   overflow-x: auto;
   white-space: nowrap;
 
-  a.a {
+  a,.a {
     align-items: center;
     border-bottom-color: $tabs-border-bottom-color;
     border-bottom-style: $tabs-border-bottom-style;
@@ -109,13 +109,13 @@ $tabs-toggle-link-active-color: $link-invert !default;
 
   // Alignment
   &.is-centered {
-    ul {
+    .bra-tab-ul {
       justify-content: center;
     }
   }
 
   &.is-right {
-    ul {
+    .bra-tab-ul {
       justify-content: flex-end;
     }
   }
@@ -143,7 +143,7 @@ $tabs-toggle-link-active-color: $link-invert !default;
   }
 
   &.is-fullwidth {
-    li {
+    li,.bra-tab {
       flex-grow: 1;
       flex-shrink: 0;
     }
@@ -194,7 +194,7 @@ $tabs-toggle-link-active-color: $link-invert !default;
     }
 
     &.is-toggle-rounded {
-      li {
+      li,.bra-tab {
         &:first-child a,.a {
           border-bottom-left-radius: $radius-rounded;
           border-top-left-radius: $radius-rounded;
