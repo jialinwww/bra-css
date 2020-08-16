@@ -1685,6 +1685,44 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   bottom: 0;
 }
 
+.is-cover {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.is-full-width {
+  width: 100%;
+}
+
+.is-full-height {
+  height: 100%;
+}
+
+.rm-border {
+  border: none !important;
+}
+
+.z-100 {
+  z-index: 100 !important;
+}
+
+.z-200 {
+  z-index: 200 !important;
+}
+
+.z-300 {
+  z-index: 300 !important;
+}
+
+.z-400 {
+  z-index: 400 !important;
+}
+
+.z-500 {
+  z-index: 500 !important;
+}
+
 .is-box {
   box-shadow: 0 0.5em 1em -0.125em rgba(8, 7, 7, 0.1), 0 0px 0 1px rgba(8, 7, 7, 0.02);
   display: block;
@@ -1692,14 +1730,6 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .is-rounded {
   border-radius: 290486px;
-}
-
-.is-fill-h {
-  height: 100%;
-}
-
-.is-fill-w {
-  width: 100%;
 }
 
 .bra-btn {
@@ -6355,7 +6385,7 @@ fieldset[disabled] .bra-select select:hover {
   white-space: nowrap;
 }
 
-.bra-tabs a.a {
+.bra-tabs a, .bra-tabs .a {
   align-items: center;
   border-bottom-color: #dbdbdb;
   border-bottom-style: solid;
@@ -6368,7 +6398,7 @@ fieldset[disabled] .bra-select select:hover {
   vertical-align: top;
 }
 
-.bra-tabs a.a:hover {
+.bra-tabs a:hover, .bra-tabs .a:hover {
   border-bottom-color: #363636;
   color: #363636;
 }
